@@ -1,0 +1,283 @@
+﻿<Complex name="Root" type="HelloWorldApp.BusinessObjects.RootContainer, HelloWorldApp, Version=2.16.0.0, Culture=neutral, PublicKeyToken=null">
+  <Properties>
+    <Simple name="SimpleSByte" value="-33" />
+    <Simple name="SimpleInt" value="42" />
+    <Simple name="SimpleSingle" value="-352" />
+    <Simple name="SimpleDouble" value="42.42" />
+    <Simple name="SimpleDateTime" value="05/05/2004 00:00:00" />
+    <Simple name="SimpleTimeSpan" value="05:04:03" />
+    <Simple name="SimpleGuid" value="4989a05f-cc25-4211-83d9-9d4b340d2174" />
+    <Simple name="SimpleEnum" value="Three" />
+    <Simple name="SimpleEnumInheritedFromByte" value="ThreeB" />
+    <Simple name="FlagsEnum" value="Alfa, Beta" />
+    <Simple name="FlagEnumInheritedFromUInt16" value="BetaU, GammaU" />
+    <Simple name="SimpleDecimal" value="17.123" />
+    <Simple name="SimpleString" value="sth" />
+    <Simple name="EmptyString" value="" />
+    <Complex name="AdvancedStruct">
+      <Properties>
+        <Simple name="SimpleInt" value="0" />
+        <Simple name="SimpleText" value="nix" />
+        <Simple name="DateTime" value="04/10/2010 00:00:00" />
+      </Properties>
+    </Complex>
+    <Simple name="Type" type="System.MonoType, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="System.Collections.Generic.List`1[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <SingleArray name="SingleArray">
+      <Items>
+        <Simple value="ala" />
+        <Simple value="ma" />
+        <Null />
+        <Simple value="kota" />
+      </Items>
+    </SingleArray>
+    <Simple name="ArrayOfByte" value="QkNERUYNCkdISQ0Kn90=" />
+    <MultiArray name="DoubleArray">
+      <Dimensions>
+        <Dimension length="3" />
+        <Dimension length="2" />
+      </Dimensions>
+      <Items>
+        <Item indexes="0,0">
+          <Simple value="k1" />
+        </Item>
+        <Item indexes="0,1">
+          <Simple value="k2" />
+        </Item>
+        <Item indexes="1,0">
+          <Simple value="b1" />
+        </Item>
+        <Item indexes="1,1">
+          <Simple value="b2" />
+        </Item>
+        <Item indexes="2,0">
+          <Simple value="z1" />
+        </Item>
+        <Item indexes="2,1">
+          <Simple value="z2" />
+        </Item>
+      </Items>
+    </MultiArray>
+    <SingleArray name="SingleArrayOfChars">
+      <Items>
+        <Simple value="o" />
+        <Simple value=" " />
+        <Simple value="&#xA;" />
+        <Simple value="&amp;#x0;" />
+      </Items>
+    </SingleArray>
+    <SingleArray name="PolymorphicSingleArray">
+      <Items>
+        <Complex type="HelloWorldApp.BusinessObjects.ComplexObject, HelloWorldApp, Version=2.16.0.0, Culture=neutral, PublicKeyToken=null">
+          <Properties>
+            <Simple name="SimpleInt" value="999" />
+            <Null name="Name" />
+            <Null name="OtherComplex" />
+          </Properties>
+        </Complex>
+      </Items>
+    </SingleArray>
+    <Collection name="GenericList" type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <Properties>
+        <Simple name="Capacity" value="4" />
+      </Properties>
+      <Items>
+        <Simple value="item1" />
+        <Simple value="item2" />
+        <Simple value="item3" />
+      </Items>
+    </Collection>
+    <Dictionary name="GenericDictionary" type="System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <Items>
+        <Item>
+          <Simple value="5" />
+          <Null />
+        </Item>
+        <Item>
+          <Simple value="10" />
+          <Simple value="ten" />
+        </Item>
+        <Item>
+          <Simple value="20" />
+          <Simple value="twenty" />
+        </Item>
+      </Items>
+    </Dictionary>
+    <Dictionary name="GenericDictionaryOfPolymorphicValues" type="System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[HelloWorldApp.BusinessObjects.IComplexObject, HelloWorldApp, Version=2.16.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <Items>
+        <Item>
+          <Simple value="2012" />
+          <Complex type="HelloWorldApp.BusinessObjects.ComplexObject, HelloWorldApp, Version=2.16.0.0, Culture=neutral, PublicKeyToken=null">
+            <Properties>
+              <Simple name="SimpleInt" value="2012000" />
+              <Null name="Name" />
+              <Null name="OtherComplex" />
+            </Properties>
+          </Complex>
+        </Item>
+      </Items>
+    </Dictionary>
+    <Complex name="ComplexObject" type="HelloWorldApp.BusinessObjects.ComplexObject, HelloWorldApp, Version=2.16.0.0, Culture=neutral, PublicKeyToken=null">
+      <Properties>
+        <Simple name="SimpleInt" value="33" />
+        <Null name="Name" />
+        <Null name="OtherComplex" />
+      </Properties>
+    </Complex>
+    <Complex name="ComplexObjectWithSelfReference" id="13">
+      <Properties>
+        <Simple name="SimpleInt" value="794" />
+        <Simple name="Name" value="Self-Referencing" />
+        <Reference name="OtherComplex" id="13" />
+      </Properties>
+    </Complex>
+    <Collection name="ListWithSelfReference" id="14">
+      <Properties>
+        <Simple name="Capacity" value="4" />
+      </Properties>
+      <Items>
+        <Reference id="14" />
+      </Items>
+    </Collection>
+    <Collection name="ComplexObjectCollection">
+      <Items>
+        <Complex type="HelloWorldApp.BusinessObjects.ComplexObject, HelloWorldApp, Version=2.16.0.0, Culture=neutral, PublicKeyToken=null">
+          <Properties>
+            <Simple name="SimpleInt" value="11" />
+            <Null name="Name" />
+            <Null name="OtherComplex" />
+          </Properties>
+        </Complex>
+        <Complex type="HelloWorldApp.BusinessObjects.ComplexObject, HelloWorldApp, Version=2.16.0.0, Culture=neutral, PublicKeyToken=null">
+          <Properties>
+            <Simple name="SimpleInt" value="12" />
+            <Null name="Name" />
+            <Null name="OtherComplex" />
+          </Properties>
+        </Complex>
+      </Items>
+    </Collection>
+    <Collection name="ComplexObjectCollectionWithReferences">
+      <Items>
+        <Complex type="HelloWorldApp.BusinessObjects.ComplexObject, HelloWorldApp, Version=2.16.0.0, Culture=neutral, PublicKeyToken=null">
+          <Properties>
+            <Simple name="SimpleInt" value="1311" />
+            <Null name="Name" />
+            <Null name="OtherComplex" />
+          </Properties>
+        </Complex>
+        <Reference id="13" />
+        <Complex type="HelloWorldApp.BusinessObjects.ComplexObject, HelloWorldApp, Version=2.16.0.0, Culture=neutral, PublicKeyToken=null">
+          <Properties>
+            <Simple name="SimpleInt" value="131212" />
+            <Null name="Name" />
+            <Null name="OtherComplex" />
+          </Properties>
+        </Complex>
+      </Items>
+    </Collection>
+    <Dictionary name="ComplexObjectDictionary">
+      <Items>
+        <Item>
+          <Simple value="100" />
+          <Complex type="HelloWorldApp.BusinessObjects.ComplexObject, HelloWorldApp, Version=2.16.0.0, Culture=neutral, PublicKeyToken=null">
+            <Properties>
+              <Simple name="SimpleInt" value="101" />
+              <Null name="Name" />
+              <Null name="OtherComplex" />
+            </Properties>
+          </Complex>
+        </Item>
+        <Item>
+          <Simple value="200" />
+          <Complex type="HelloWorldApp.BusinessObjects.ComplexObject, HelloWorldApp, Version=2.16.0.0, Culture=neutral, PublicKeyToken=null">
+            <Properties>
+              <Simple name="SimpleInt" value="202" />
+              <Null name="Name" />
+              <Null name="OtherComplex" />
+            </Properties>
+          </Complex>
+        </Item>
+        <Item>
+          <Simple value="300" />
+          <Null />
+        </Item>
+      </Items>
+    </Dictionary>
+    <Dictionary name="ComplexObjectDictionaryWithSelfReference" id="24">
+      <Properties>
+        <Reference name="ReferenceObject" id="24" />
+      </Properties>
+      <Items>
+        <Item>
+          <Simple value="44" />
+          <Reference id="24" />
+        </Item>
+      </Items>
+    </Dictionary>
+    <Collection name="GenericListOfComplexObjects" type="System.Collections.Generic.List`1[[HelloWorldApp.BusinessObjects.IComplexObject, HelloWorldApp, Version=2.16.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <Properties>
+        <Simple name="Capacity" value="4" />
+      </Properties>
+      <Items>
+        <Complex type="HelloWorldApp.BusinessObjects.ComplexObject, HelloWorldApp, Version=2.16.0.0, Culture=neutral, PublicKeyToken=null">
+          <Properties>
+            <Simple name="SimpleInt" value="303" />
+            <Null name="Name" />
+            <Null name="OtherComplex" />
+          </Properties>
+        </Complex>
+      </Items>
+    </Collection>
+    <Complex name="GenericObjectOfComplexObject">
+      <Properties>
+        <Complex name="Data" type="HelloWorldApp.BusinessObjects.ComplexObject, HelloWorldApp, Version=2.16.0.0, Culture=neutral, PublicKeyToken=null">
+          <Properties>
+            <Simple name="SimpleInt" value="12345" />
+            <Null name="Name" />
+            <Null name="OtherComplex" />
+          </Properties>
+        </Complex>
+      </Properties>
+    </Complex>
+    <MultiArray name="MultiArrayOfGenericObjectWithPolymorphicArgument" id="29">
+      <Dimensions>
+        <Dimension length="1" />
+        <Dimension length="1" />
+      </Dimensions>
+      <Items>
+        <Item indexes="0,0">
+          <Complex>
+            <Properties>
+              <Complex name="Data" type="HelloWorldApp.BusinessObjects.ComplexObject, HelloWorldApp, Version=2.16.0.0, Culture=neutral, PublicKeyToken=null">
+                <Properties>
+                  <Simple name="SimpleInt" value="1357" />
+                  <Null name="Name" />
+                  <Null name="OtherComplex" />
+                </Properties>
+              </Complex>
+            </Properties>
+          </Complex>
+        </Item>
+      </Items>
+    </MultiArray>
+    <SingleArray name="SingleArrayOfObjects">
+      <Items>
+        <Simple type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="42" />
+        <Simple type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="nothing to say" />
+        <Simple type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="False" />
+        <Simple type="HelloWorldApp.BusinessObjects.SimpleEnum, HelloWorldApp, Version=2.16.0.0, Culture=neutral, PublicKeyToken=null" value="Three" />
+        <Null />
+        <SingleArray type="System.Object[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <Items>
+            <Simple type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="42" />
+            <Simple type="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="nothing to say" />
+            <Simple type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="False" />
+            <Simple type="HelloWorldApp.BusinessObjects.SimpleEnum, HelloWorldApp, Version=2.16.0.0, Culture=neutral, PublicKeyToken=null" value="Three" />
+            <Null />
+          </Items>
+        </SingleArray>
+        <Reference id="29" />
+      </Items>
+    </SingleArray>
+  </Properties>
+</Complex>
