@@ -62,6 +62,12 @@
   <ItemGroup>
     <AndroidResource Include="Resources\Drawable\Icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SharpSerializer.Library.MonoForAndroid\SharpSerializer.Library.MonoForAndroid.csproj">
+      <Project>{EBDFA7C3-91C0-4580-9AD4-4F509066E038}</Project>
+      <Name>SharpSerializer.Library.MonoForAndroid</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
      Other similar extension points exist, see Microsoft.Common.targets.

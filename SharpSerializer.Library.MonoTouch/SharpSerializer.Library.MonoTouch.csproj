@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -38,6 +38,156 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\SharpSerializer.Library\Advanced\BinaryPropertyDeserializer.cs">
+      <Link>Advanced\BinaryPropertyDeserializer.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSerializer.Library\Advanced\BinaryPropertySerializer.cs">
+      <Link>Advanced\BinaryPropertySerializer.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSerializer.Library\Advanced\Binary\IBinaryReader.cs">
+      <Link>Advanced\Binary\IBinaryReader.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSerializer.Library\Advanced\Binary\IBinaryWriter.cs">
+      <Link>Advanced\Binary\IBinaryWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSerializer.Library\Advanced\BurstBinaryReader.cs">
+      <Link>Advanced\BurstBinaryReader.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSerializer.Library\Advanced\BurstBinaryWriter.cs">
+      <Link>Advanced\BurstBinaryWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSerializer.Library\Advanced\DefaultXmlReader.cs">
+      <Link>Advanced\DefaultXmlReader.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSerializer.Library\Advanced\DefaultXmlWriter.cs">
+      <Link>Advanced\DefaultXmlWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSerializer.Library\Advanced\Deserializing\IPropertyDeserializer.cs">
+      <Link>Advanced\Deserializing\IPropertyDeserializer.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSerializer.Library\Advanced\PropertyCache.cs">
+      <Link>Advanced\PropertyCache.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSerializer.Library\Advanced\PropertyProvider.cs">
+      <Link>Advanced\PropertyProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSerializer.Library\Advanced\Serializing\IPropertySerializer.cs">
+      <Link>Advanced\Serializing\IPropertySerializer.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSerializer.Library\Advanced\Serializing\ITypeNameConverter.cs">
+      <Link>Advanced\Serializing\ITypeNameConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSerializer.Library\Advanced\Serializing\PropertySerializer.cs">
+      <Link>Advanced\Serializing\PropertySerializer.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSerializer.Library\Advanced\SimpleValueConverter.cs">
+      <Link>Advanced\SimpleValueConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSerializer.Library\Advanced\SizeOptimizedBinaryReader.cs">
+      <Link>Advanced\SizeOptimizedBinaryReader.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSerializer.Library\Advanced\SizeOptimizedBinaryWriter.cs">
+      <Link>Advanced\SizeOptimizedBinaryWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSerializer.Library\Advanced\TypeNameConverter.cs">
+      <Link>Advanced\TypeNameConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSerializer.Library\Advanced\XmlPropertyDeserializer.cs">
+      <Link>Advanced\XmlPropertyDeserializer.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSerializer.Library\Advanced\XmlPropertySerializer.cs">
+      <Link>Advanced\XmlPropertySerializer.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSerializer.Library\Advanced\Xml\ISimpleValueConverter.cs">
+      <Link>Advanced\Xml\ISimpleValueConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSerializer.Library\Advanced\Xml\IXmlReader.cs">
+      <Link>Advanced\Xml\IXmlReader.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSerializer.Library\Advanced\Xml\IXmlWriter.cs">
+      <Link>Advanced\Xml\IXmlWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSerializer.Library\BinarySerializationMode.cs">
+      <Link>BinarySerializationMode.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSerializer.Library\Core\ArrayAnalyzer.cs">
+      <Link>Core\ArrayAnalyzer.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSerializer.Library\Core\Binary\BinaryReaderTools.cs">
+      <Link>Core\Binary\BinaryReaderTools.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSerializer.Library\Core\Binary\BinaryWriterTools.cs">
+      <Link>Core\Binary\BinaryWriterTools.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSerializer.Library\Core\Binary\Elements.cs">
+      <Link>Core\Binary\Elements.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSerializer.Library\Core\Binary\IndexGenerator.cs">
+      <Link>Core\Binary\IndexGenerator.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSerializer.Library\Core\CreatingInstanceException.cs">
+      <Link>Core\CreatingInstanceException.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSerializer.Library\Core\DefaultInitializer.cs">
+      <Link>Core\DefaultInitializer.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSerializer.Library\Core\DeserializingException.cs">
+      <Link>Core\DeserializingException.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSerializer.Library\Core\Property.cs">
+      <Link>Core\Property.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSerializer.Library\Core\SharpSerializerSettings.cs">
+      <Link>Core\SharpSerializerSettings.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSerializer.Library\Core\SimpleValueParsingException.cs">
+      <Link>Core\SimpleValueParsingException.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSerializer.Library\Core\Tools.cs">
+      <Link>Core\Tools.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSerializer.Library\Core\Xml\Elements.cs">
+      <Link>Core\Xml\Elements.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSerializer.Library\Deserializing\ObjectFactory.cs">
+      <Link>Deserializing\ObjectFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSerializer.Library\ExcludeFromSerializationAttribute.cs">
+      <Link>ExcludeFromSerializationAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSerializer.Library\Serializing\PropertyFactory.cs">
+      <Link>Serializing\PropertyFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSerializer.Library\Serializing\PropertyTypeInfo.cs">
+      <Link>Serializing\PropertyTypeInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSerializer.Library\Serializing\TypeInfo.cs">
+      <Link>Serializing\TypeInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSerializer.Library\Serializing\TypeInfoCollection.cs">
+      <Link>Serializing\TypeInfoCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSerializer.Library\SharpSerializer.cs">
+      <Link>SharpSerializer.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSerializer.Library\SharpSerializerBinarySettings.cs">
+      <Link>SharpSerializerBinarySettings.cs</Link>
+    </Compile>
+    <Compile Include="..\SharpSerializer.Library\SharpSerializerXmlSettings.cs">
+      <Link>SharpSerializerXmlSettings.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\SharpSerializer.Library\key.snk">
+      <Link>key.snk</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\SharpSerializer.Library\SharpSerializer.ico">
+      <Link>SharpSerializer.ico</Link>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

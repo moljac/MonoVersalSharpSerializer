@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -6,7 +6,7 @@
     <ProductVersion>10.0.0</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{8FAA29AE-7554-4093-878B-87B5DBC24F42}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <RootNamespace>SharpSerializer.Documentation</RootNamespace>
     <AssemblyName>SharpSerializer.Documentation</AssemblyName>
   </PropertyGroup>
@@ -28,10 +28,11 @@
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <ItemGroup>
-    <Folder Include="MacOSX.Desktop.Tests.Files\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="MacOSX.Desktop.Tests.Files\sharpSerializerExample1.burst" />
     <None Include="MacOSX.Desktop.Tests.Files\sharpSerializerExample1.sizeOptimized" />
