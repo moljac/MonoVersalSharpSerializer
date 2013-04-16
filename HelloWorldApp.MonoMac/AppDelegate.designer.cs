@@ -1,5 +1,5 @@
 
-namespace HelloWorldApp.MonoMac
+namespace HelloWorldApp.Mac
 {
     // Should subclass MonoMac.AppKit.NSResponder
     [MonoMac.Foundation.Register("AppDelegate")]

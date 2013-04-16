@@ -4,7 +4,7 @@ using MonoMac.Foundation;
 using MonoMac.AppKit;
 using MonoMac.ObjCRuntime;
 
-namespace HelloWorldApp.MonoMac
+namespace HelloWorldApp.Mac
 {
     class MainClass
     {
