@@ -1,11 +1,10 @@
-﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+﻿<Properties MonoDevelop.MonoMac.LastXamMacNagTime="04/08/2013 19:15:44">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Option id="ShowAllFiles" value="True" />
-          <Node name="HelloWorldApp.MonoMac" selected="True" />
         </State>
       </Pad>
     </Pads>
@@ -14,4 +13,5 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.HelloWorldApp.MonoForAndroid AndroidDeviceId-Debug="emulator-5554" />
 </Properties>
