@@ -1,4 +1,17 @@
-# Bug Mono <= 3.x.x #
+# SharpSerializer port: XmlSerialization - Bug in Mono < 3.0 #
+
+During port of SharpSerializer to Mono mobile platforms our team has encountered
+bug in Xml Serialization of '\t' character in mono versions prior to 3.0
+
+Samples:
+
+* 	full solution    
+	Mobile samples - upcoming!!!    
+	[https://github.com/moljac/MonoVersalSharpSerializer](https://github.com/moljac/MonoVersalSharpSerializer)    
+*   reduced sample Console    
+	[https://github.com/moljac/MonoVersalSharpSerializer/tree/master/HelloWorldApp.Console.BugXmlSerializationInMono](https://github.com/moljac/MonoVersalSharpSerializer/tree/master/HelloWorldApp.Console.BugXmlSerializationInMono)
+
+
 
 ## Reduced version ##
 
