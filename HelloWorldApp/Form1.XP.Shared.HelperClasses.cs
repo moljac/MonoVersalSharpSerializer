@@ -6,10 +6,10 @@ namespace HelloWorldApp
 {
     public partial class Form1
     {
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            System.Diagnostics.Process.Start("http://www.sharpserializer.com");
-        }
+		private static void Navigate(string url)
+		{
+			System.Diagnostics.Process.Start(url);
+		}
 
         /// <summary>
         /// It's only a fake class!

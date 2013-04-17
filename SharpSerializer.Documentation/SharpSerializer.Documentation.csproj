@@ -31,6 +31,7 @@
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup />
   <ItemGroup>
+    <None Include="MacOSX.Desktop.Tests.Files\readme.md" />
     <None Include="MacOSX.Desktop.Tests.Files\sharpSerializerExample1.burst" />
     <None Include="MacOSX.Desktop.Tests.Files\sharpSerializerExample1.sizeOptimized" />
     <None Include="MacOSX.Desktop.Tests.Files\sharpSerializerExample1.xml" />

@@ -64,13 +64,16 @@
     <Compile Include="BusinessObjects\ComplexObject.cs" />
     <Compile Include="BusinessObjects\GenericObject.cs" />
     <Compile Include="BusinessObjects\RootContainer.cs" />
+    <Compile Include="Form1.XP.Shared.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.SecondPart.cs">
+    <Compile Include="Form1.XP.Shared.HelperClasses.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Program.cs" />
