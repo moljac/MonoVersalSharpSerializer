@@ -22,5 +22,12 @@ namespace HelloWorldApp
 			Navigate("http://www.sharpserializer.com");
 		}
 
+		private void buttonForm2_Click(object sender, EventArgs e)
+		{
+			FormSimpleSample f = new FormSimpleSample();
+			f.Show();
+
+			return;
+		}
 	}
 }

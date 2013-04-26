@@ -88,6 +88,30 @@
     <None Include="Info.plist" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\HelloWorldApp\BusinessObjects\AdvancedStruct.cs">
+      <Link>BusinessObjects\AdvancedStruct.cs</Link>
+    </Compile>
+    <Compile Include="..\HelloWorldApp\BusinessObjects\ComplexObject.cs">
+      <Link>BusinessObjects\ComplexObject.cs</Link>
+    </Compile>
+    <Compile Include="..\HelloWorldApp\BusinessObjects\Controller.Person.XP.cs">
+      <Link>BusinessObjects\Controller.Person.XP.cs</Link>
+    </Compile>
+    <Compile Include="..\HelloWorldApp\BusinessObjects\Controller.Person.XP.SharpSerializer.cs">
+      <Link>BusinessObjects\Controller.Person.XP.SharpSerializer.cs</Link>
+    </Compile>
+    <Compile Include="..\HelloWorldApp\BusinessObjects\GenericObject.cs">
+      <Link>BusinessObjects\GenericObject.cs</Link>
+    </Compile>
+    <Compile Include="..\HelloWorldApp\BusinessObjects\Person.cs">
+      <Link>BusinessObjects\Person.cs</Link>
+    </Compile>
+    <Compile Include="..\HelloWorldApp\BusinessObjects\Person.Serializable.cs">
+      <Link>BusinessObjects\Person.Serializable.cs</Link>
+    </Compile>
+    <Compile Include="..\HelloWorldApp\BusinessObjects\RootContainer.cs">
+      <Link>BusinessObjects\RootContainer.cs</Link>
+    </Compile>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
   </ItemGroup>

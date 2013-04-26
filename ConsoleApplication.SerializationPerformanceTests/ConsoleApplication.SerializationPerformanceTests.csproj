@@ -5,13 +5,14 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{9A2D1ED4-E8CE-4E39-ADDB-7CC50CFC3E2E}</ProjectGuid>
+    <ProjectGuid>{FA198018-E13D-4747-84B7-18C47B726D5F}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HelloWorldApp</RootNamespace>
-    <AssemblyName>HelloWorldApp.Console</AssemblyName>
+    <RootNamespace>ConsoleApplication.SerializationPerformanceTests</RootNamespace>
+    <AssemblyName>ConsoleApplication.SerializationPerformanceTests</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -34,8 +35,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="protobuf-net">
+      <HintPath>..\packages\protobuf-net.2.0.0.621\lib\net40\protobuf-net.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,42 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\HelloWorldApp\BusinessObjects\AdvancedStruct.cs">
-      <Link>BusinessObjects\AdvancedStruct.cs</Link>
-    </Compile>
-    <Compile Include="..\HelloWorldApp\BusinessObjects\ComplexObject.cs">
-      <Link>BusinessObjects\ComplexObject.cs</Link>
-    </Compile>
-    <Compile Include="..\HelloWorldApp\BusinessObjects\Controller.Person.netfx30.cs">
-      <Link>BusinessObjects\Controller.Person.netfx30.cs</Link>
-    </Compile>
-    <Compile Include="..\HelloWorldApp\BusinessObjects\Controller.Person.XP.cs">
-      <Link>BusinessObjects\Controller.Person.XP.cs</Link>
-    </Compile>
-    <Compile Include="..\HelloWorldApp\BusinessObjects\Controller.Person.XP.SharpSerializer.cs">
-      <Link>BusinessObjects\Controller.Person.XP.SharpSerializer.cs</Link>
-    </Compile>
-    <Compile Include="..\HelloWorldApp\BusinessObjects\GenericObject.cs">
-      <Link>BusinessObjects\GenericObject.cs</Link>
-    </Compile>
-    <Compile Include="..\HelloWorldApp\BusinessObjects\Person.cs">
-      <Link>BusinessObjects\Person.cs</Link>
-    </Compile>
-    <Compile Include="..\HelloWorldApp\BusinessObjects\Person.Serializable.cs">
-      <Link>BusinessObjects\Person.Serializable.cs</Link>
-    </Compile>
-    <Compile Include="..\HelloWorldApp\BusinessObjects\RootContainer.cs">
-      <Link>BusinessObjects\RootContainer.cs</Link>
-    </Compile>
-    <Compile Include="..\HelloWorldApp\Form1.XP.Shared.cs">
-      <Link>Form1.XP.Shared.cs</Link>
-    </Compile>
-    <Compile Include="..\HelloWorldApp\Form1.XP.Shared.HelperClasses.cs">
-      <Link>Form1.XP.Shared.HelperClasses.cs</Link>
-    </Compile>
-    <Compile Include="Patches\MessageBox.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SharpSerializer.Library\SharpSerializer.Library.csproj">
