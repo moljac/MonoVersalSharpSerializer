@@ -1,54 +1,12 @@
-<<<<<<< HEAD
-﻿<Properties MonoDevelop.MonoMac.LastXamMacNagTime="04/17/2013 12:16:32">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="d:\SRC\libraries-holisticware\git[github.com]\MonoVersalSharpSerializer\SharpSerializer.Library\Advanced\PropertyProvider.cs">
-=======
-﻿<Properties MonoDevelop.MonoMac.LastXamMacNagTime="04/24/2013 17:42:50">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="HelloWorldApp.MonoMac/Main.cs">
->>>>>>> gitignore
+﻿<Properties MonoDevelop.MonoMac.LastXamMacNagTime="04/27/2013 04:43:55">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="HelloWorldApp/Form1.cs">
     <Files>
-      <File FileName="HelloWorldApp.MonoMac\MainWindow.cs" Line="1" Column="1" />
-      <File FileName="HelloWorldApp.MonoMac\MainWindowController.cs" Line="1" Column="1" />
-      <File FileName="README.md" Line="1" Column="1" />
-<<<<<<< HEAD
-      <File FileName="HelloWorldApp.MonoMac\MainWindow.designer.cs" Line="1" Column="1" />
-      <File FileName="HelloWorldApp.MonoMac\AppDelegate.cs" Line="1" Column="1" />
-      <File FileName="HelloWorldApp.MonoMac\AppDelegate.designer.cs" Line="1" Column="1" />
-      <File FileName="HelloWorldApp\Form1.cs" Line="5" Column="28" />
-      <File FileName="HelloWorldApp\Form1.Designer.cs" Line="1" Column="1" />
-      <File FileName="HelloWorldApp\Form1.resx" Line="1" Column="1" />
-      <File FileName="HelloWorldApp.MonoMac\Main.cs" Line="1" Column="1" />
-      <File FileName="d:\SRC\libraries-holisticware\git[github.com]\MonoVersalSharpSerializer\SharpSerializer.Library\Advanced\PropertyProvider.cs" Line="102" Column="3" />
-=======
-      <File FileName="HelloWorldApp.MonoMac/MainWindow.designer.cs" Line="1" Column="1" />
-      <File FileName="HelloWorldApp.MonoMac/AppDelegate.cs" Line="1" Column="1" />
-      <File FileName="HelloWorldApp.MonoMac/AppDelegate.designer.cs" Line="1" Column="1" />
-      <File FileName="HelloWorldApp/Form1.cs" Line="1" Column="1" />
-      <File FileName="HelloWorldApp/Form1.Designer.cs" Line="1" Column="1" />
-      <File FileName="HelloWorldApp/Form1.resx" Line="1" Column="1" />
-      <File FileName="HelloWorldApp.MonoMac/Main.cs" Line="19" Column="1" />
->>>>>>> gitignore
+      <File FileName="HelloWorldApp/Form1.cs" Line="8" Column="7" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State expanded="True">
-          <Option id="ShowAllFiles" value="True" />
-          <Node name="HelloWorldApp" expanded="True">
-            <Node name="Form1.cs" expanded="True" />
-          </Node>
-          <Node name="SharpSerializer.Library.MonoForAndroid" expanded="True">
-            <Node name="Advanced" expanded="True">
-              <Node name="PropertyProvider.cs" selected="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.HelloWorldApp.MonoForAndroid AndroidDeviceId-Debug="emulator-5554" />
 </Properties>

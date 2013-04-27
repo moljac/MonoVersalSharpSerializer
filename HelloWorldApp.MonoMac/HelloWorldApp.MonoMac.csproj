@@ -77,9 +77,6 @@
     <Compile Include="..\HelloWorldApp\BusinessObjects\ComplexObject.cs">
       <Link>BusinessObjects\ComplexObject.cs</Link>
     </Compile>
-    <Compile Include="..\HelloWorldApp\BusinessObjects\Controller.Person.cs">
-      <Link>BusinessObjects\Controller.Person.cs</Link>
-    </Compile>
     <Compile Include="..\HelloWorldApp\BusinessObjects\GenericObject.cs">
       <Link>BusinessObjects\GenericObject.cs</Link>
     </Compile>
