@@ -41,7 +41,7 @@ namespace HelloWorldApp
 			byte[] bytes = null;
 			if ("" != filename)
 			{
-				bytes = ControllerPersonOperations.Deserialize(filename);
+				bytes = ControllerPersonOperations.Read(filename);
 			}
 
 			string content = System.Text.Encoding.UTF8.GetString(bytes);

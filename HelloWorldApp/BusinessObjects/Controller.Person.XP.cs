@@ -9,7 +9,7 @@ namespace HelloWorldApp.BusinessObjects
 {
 	public partial class ControllerPersonOperations
 	{
-		public static byte[] Deserialize(string filename)
+		public static byte[] Read(string filename)
 		{
 			MemoryStream ms = new MemoryStream();
 			FileStream file = new FileStream(filename, FileMode.Open, FileAccess.Read);
