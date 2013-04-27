@@ -1,10 +1,17 @@
+<<<<<<< HEAD
 ﻿<Properties MonoDevelop.MonoMac.LastXamMacNagTime="04/17/2013 12:16:32">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="d:\SRC\libraries-holisticware\git[github.com]\MonoVersalSharpSerializer\SharpSerializer.Library\Advanced\PropertyProvider.cs">
+=======
+﻿<Properties MonoDevelop.MonoMac.LastXamMacNagTime="04/24/2013 17:42:50">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="HelloWorldApp.MonoMac/Main.cs">
+>>>>>>> gitignore
     <Files>
       <File FileName="HelloWorldApp.MonoMac\MainWindow.cs" Line="1" Column="1" />
       <File FileName="HelloWorldApp.MonoMac\MainWindowController.cs" Line="1" Column="1" />
       <File FileName="README.md" Line="1" Column="1" />
+<<<<<<< HEAD
       <File FileName="HelloWorldApp.MonoMac\MainWindow.designer.cs" Line="1" Column="1" />
       <File FileName="HelloWorldApp.MonoMac\AppDelegate.cs" Line="1" Column="1" />
       <File FileName="HelloWorldApp.MonoMac\AppDelegate.designer.cs" Line="1" Column="1" />
@@ -13,6 +20,15 @@
       <File FileName="HelloWorldApp\Form1.resx" Line="1" Column="1" />
       <File FileName="HelloWorldApp.MonoMac\Main.cs" Line="1" Column="1" />
       <File FileName="d:\SRC\libraries-holisticware\git[github.com]\MonoVersalSharpSerializer\SharpSerializer.Library\Advanced\PropertyProvider.cs" Line="102" Column="3" />
+=======
+      <File FileName="HelloWorldApp.MonoMac/MainWindow.designer.cs" Line="1" Column="1" />
+      <File FileName="HelloWorldApp.MonoMac/AppDelegate.cs" Line="1" Column="1" />
+      <File FileName="HelloWorldApp.MonoMac/AppDelegate.designer.cs" Line="1" Column="1" />
+      <File FileName="HelloWorldApp/Form1.cs" Line="1" Column="1" />
+      <File FileName="HelloWorldApp/Form1.Designer.cs" Line="1" Column="1" />
+      <File FileName="HelloWorldApp/Form1.resx" Line="1" Column="1" />
+      <File FileName="HelloWorldApp.MonoMac/Main.cs" Line="19" Column="1" />
+>>>>>>> gitignore
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
