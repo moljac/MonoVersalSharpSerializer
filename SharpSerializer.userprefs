@@ -1,12 +1,9 @@
-﻿<Properties MonoDevelop.MonoMac.LastXamMacNagTime="04/27/2013 04:43:55">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="HelloWorldApp\Form1.cs">
-    <Files>
-      <File FileName="HelloWorldApp\Form1.cs" Line="8" Column="7" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+﻿<Properties MonoDevelop.MonoMac.LastXamMacNagTime="04/28/2013 16:58:31">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.HelloWorldApp.MonoForAndroid AndroidDeviceId-Debug="emulator-5554" />
 </Properties>

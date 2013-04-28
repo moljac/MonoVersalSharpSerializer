@@ -1,16 +1,16 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>10.0.0</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{21DFEB7F-BC55-4D23-B173-6F1172AAA01E}</ProjectGuid>
+    <ProjectGuid>{B91E9ABB-AEED-4F38-B13C-EA2CB473C4A0}</ProjectGuid>
     <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
-    <RootNamespace>HelloWorldApp.MonoTouch</RootNamespace>
+    <RootNamespace>HelloWorldApp</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>HelloWorldAppMonoTouch</AssemblyName>
+    <AssemblyName>HelloWorldApp</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -88,38 +88,23 @@
     <None Include="Info.plist" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\HelloWorldApp\BusinessObjects\AdvancedStruct.cs">
-      <Link>BusinessObjects\AdvancedStruct.cs</Link>
-    </Compile>
-    <Compile Include="..\HelloWorldApp\BusinessObjects\ComplexObject.cs">
-      <Link>BusinessObjects\ComplexObject.cs</Link>
-    </Compile>
-    <Compile Include="..\HelloWorldApp\BusinessObjects\Controller.Person.XP.cs">
-      <Link>BusinessObjects\Controller.Person.XP.cs</Link>
-    </Compile>
-    <Compile Include="..\HelloWorldApp\BusinessObjects\Controller.Person.XP.SharpSerializer.cs">
-      <Link>BusinessObjects\Controller.Person.XP.SharpSerializer.cs</Link>
-    </Compile>
-    <Compile Include="..\HelloWorldApp\BusinessObjects\GenericObject.cs">
-      <Link>BusinessObjects\GenericObject.cs</Link>
-    </Compile>
-    <Compile Include="..\HelloWorldApp\BusinessObjects\Person.cs">
-      <Link>BusinessObjects\Person.cs</Link>
-    </Compile>
-    <Compile Include="..\HelloWorldApp\BusinessObjects\Person.Serializable.cs">
-      <Link>BusinessObjects\Person.Serializable.cs</Link>
-    </Compile>
-    <Compile Include="..\HelloWorldApp\BusinessObjects\RootContainer.cs">
-      <Link>BusinessObjects\RootContainer.cs</Link>
-    </Compile>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\SharpSerializer.Library.MonoTouch\SharpSerializer.Library.MonoTouch.csproj">
-      <Project>{A5FD15FE-E8B3-45FF-85FE-599B56E1CAF0}</Project>
-      <Name>SharpSerializer.Library.MonoTouch</Name>
-    </ProjectReference>
+    <Compile Include="MainView.cs" />
+    <Compile Include="MainView.designer.cs">
+      <DependentUpon>MainView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SimpleSampleView.cs" />
+    <Compile Include="SimpleSampleView.designer.cs">
+      <DependentUpon>SimpleSampleView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PickerModel.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <InterfaceDefinition Include="MainView_iPhone.xib" />
+    <InterfaceDefinition Include="MainView_iPad.xib" />
+    <InterfaceDefinition Include="SimpleSampleView_iPhone.xib" />
+    <InterfaceDefinition Include="SimpleSampleView_iPad.xib" />
+  </ItemGroup>
 </Project>

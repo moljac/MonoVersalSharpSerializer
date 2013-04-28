@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <Button
+        android:text="Write XML"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/serializeXmlButton" />
+    <Button
+        android:text="Write Binary (size optimized)"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/serializeSizeOptimizedBinary" />
+    <TextView
+        android:text="All types are serialized to string lists, which are stored in the file header. Duplicates are removed. Serialized objects only reference these types. It reduces size especially if serializing collections. Refer to SizeOptimizedBinaryWriter for more details."
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1" />
+    <Button
+        android:text="Write Binary (burst)"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/serializeBurstBinary" />
+    <TextView
+        android:text="All types are serialized as parts of their objects, non regarding if there are duplicate types in the file defined. It reduces the overhead if storing single items, but increases the file size if storing collections. See BurtsBinaryWriter for details."
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2" />
+    <Button
+        android:text="Simple Sample"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonForm2" />
+</LinearLayout>
