@@ -1,8 +1,8 @@
 ﻿<Properties MonoDevelop.MonoMac.LastXamMacNagTime="04/27/2013 04:43:55">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="HelloWorldApp/Form1.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="HelloWorldApp\Form1.cs">
     <Files>
-      <File FileName="HelloWorldApp/Form1.cs" Line="8" Column="7" />
+      <File FileName="HelloWorldApp\Form1.cs" Line="8" Column="7" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

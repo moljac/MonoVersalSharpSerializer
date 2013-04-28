@@ -1,3 +1,4 @@
+:: component-create.bat
 @echo off
 
 setlocal ENABLEDELAYEDEXPANSION
