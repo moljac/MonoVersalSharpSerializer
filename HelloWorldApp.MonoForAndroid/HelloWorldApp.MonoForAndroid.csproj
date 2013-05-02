@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -45,6 +45,33 @@
     <Reference Include="Mono.Android" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\HelloWorldApp\BusinessObjects.HolisticWare\Controller.Person.netfx30.cs">
+      <Link>BusinessObjects.HolisticWare\Controller.Person.netfx30.cs</Link>
+    </Compile>
+    <Compile Include="..\HelloWorldApp\BusinessObjects.HolisticWare\Controller.Person.XP.cs">
+      <Link>BusinessObjects.HolisticWare\Controller.Person.XP.cs</Link>
+    </Compile>
+    <Compile Include="..\HelloWorldApp\BusinessObjects.HolisticWare\Controller.Person.XP.SharpSerializer.cs">
+      <Link>BusinessObjects.HolisticWare\Controller.Person.XP.SharpSerializer.cs</Link>
+    </Compile>
+    <Compile Include="..\HelloWorldApp\BusinessObjects.HolisticWare\Person.cs">
+      <Link>BusinessObjects.HolisticWare\Person.cs</Link>
+    </Compile>
+    <Compile Include="..\HelloWorldApp\BusinessObjects.HolisticWare\Person.Serializable.cs">
+      <Link>BusinessObjects.HolisticWare\Person.Serializable.cs</Link>
+    </Compile>
+    <Compile Include="..\HelloWorldApp\BusinessObjects\AdvancedStruct.cs">
+      <Link>BusinessObjects\AdvancedStruct.cs</Link>
+    </Compile>
+    <Compile Include="..\HelloWorldApp\BusinessObjects\ComplexObject.cs">
+      <Link>BusinessObjects\ComplexObject.cs</Link>
+    </Compile>
+    <Compile Include="..\HelloWorldApp\BusinessObjects\GenericObject.cs">
+      <Link>BusinessObjects\GenericObject.cs</Link>
+    </Compile>
+    <Compile Include="..\HelloWorldApp\BusinessObjects\RootContainer.cs">
+      <Link>BusinessObjects\RootContainer.cs</Link>
+    </Compile>
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -59,6 +86,12 @@
     <AndroidResource Include="Resources\values\Strings.xml" />
     <AndroidResource Include="Resources\drawable\Icon.png" />
     <AndroidResource Include="Resources\layout\SimpleSample.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SharpSerializer.Library.MonoForAndroid\SharpSerializer.Library.MonoForAndroid.csproj">
+      <Project>{EBDFA7C3-91C0-4580-9AD4-4F509066E038}</Project>
+      <Name>SharpSerializer.Library.MonoForAndroid</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
 </Project>

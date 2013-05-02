@@ -61,13 +61,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BusinessObjects\AdvancedStruct.cs" />
-    <Compile Include="BusinessObjects\Controller.Person.netfx30.cs" />
+    <Compile Include="BusinessObjects.HolisticWare\Controller.Person.netfx30.cs" />
     <Compile Include="BusinessObjects\ComplexObject.cs" />
-    <Compile Include="BusinessObjects\Controller.Person.XP.SharpSerializer.cs" />
-    <Compile Include="BusinessObjects\Controller.Person.XP.cs" />
-    <Compile Include="BusinessObjects\Person.Serializable.cs" />
+    <Compile Include="BusinessObjects.HolisticWare\Controller.Person.XP.SharpSerializer.cs" />
+    <Compile Include="BusinessObjects.HolisticWare\Controller.Person.XP.cs" />
+    <Compile Include="BusinessObjects.HolisticWare\Person.Serializable.cs" />
     <Compile Include="BusinessObjects\GenericObject.cs" />
-    <Compile Include="BusinessObjects\Person.cs" />
+    <Compile Include="BusinessObjects.HolisticWare\Person.cs" />
     <Compile Include="BusinessObjects\RootContainer.cs" />
     <Compile Include="Form1.XP.Shared.cs">
       <SubType>Form</SubType>
