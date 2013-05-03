@@ -40,6 +40,7 @@
 			this.buttonSave = new System.Windows.Forms.Button();
 			this.comboBoxFormats = new System.Windows.Forms.ComboBox();
 			this.buttonOpen = new System.Windows.Forms.Button();
+			this.buttonClear = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// labelNameFirst
@@ -57,7 +58,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.textBoxNameFirst.Location = new System.Drawing.Point(84, 6);
 			this.textBoxNameFirst.Name = "textBoxNameFirst";
-			this.textBoxNameFirst.Size = new System.Drawing.Size(354, 20);
+			this.textBoxNameFirst.Size = new System.Drawing.Size(580, 20);
 			this.textBoxNameFirst.TabIndex = 1;
 			this.textBoxNameFirst.Text = "NameFirst";
 			// 
@@ -67,7 +68,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.textBoxNameLast.Location = new System.Drawing.Point(84, 34);
 			this.textBoxNameLast.Name = "textBoxNameLast";
-			this.textBoxNameLast.Size = new System.Drawing.Size(354, 20);
+			this.textBoxNameLast.Size = new System.Drawing.Size(580, 20);
 			this.textBoxNameLast.TabIndex = 3;
 			this.textBoxNameLast.Text = "NameLast";
 			// 
@@ -97,7 +98,7 @@
 			this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
 			this.dateTimePicker1.Location = new System.Drawing.Point(84, 63);
 			this.dateTimePicker1.Name = "dateTimePicker1";
-			this.dateTimePicker1.Size = new System.Drawing.Size(354, 20);
+			this.dateTimePicker1.Size = new System.Drawing.Size(580, 20);
 			this.dateTimePicker1.TabIndex = 5;
 			this.dateTimePicker1.Value = new System.DateTime(1968, 9, 24, 23, 28, 0, 0);
 			this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
@@ -108,9 +109,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.textBoxAge.Location = new System.Drawing.Point(84, 91);
 			this.textBoxAge.Name = "textBoxAge";
-			this.textBoxAge.Size = new System.Drawing.Size(354, 20);
+			this.textBoxAge.Size = new System.Drawing.Size(580, 20);
 			this.textBoxAge.TabIndex = 7;
-			this.textBoxAge.Text = "-1";
+			this.textBoxAge.Text = "????";
 			// 
 			// labelAge
 			// 
@@ -151,9 +152,9 @@
             "XmlSerializer",
             "SharpSerializer Binary",
             "SharpSerializer Xml"});
-			this.comboBoxFormats.Location = new System.Drawing.Point(327, 117);
+			this.comboBoxFormats.Location = new System.Drawing.Point(405, 117);
 			this.comboBoxFormats.Name = "comboBoxFormats";
-			this.comboBoxFormats.Size = new System.Drawing.Size(111, 21);
+			this.comboBoxFormats.Size = new System.Drawing.Size(259, 21);
 			this.comboBoxFormats.TabIndex = 10;
 			// 
 			// buttonOpen
@@ -166,11 +167,22 @@
 			this.buttonOpen.UseVisualStyleBackColor = true;
 			this.buttonOpen.Click += new System.EventHandler(this.buttonOpen_Click);
 			// 
+			// buttonClear
+			// 
+			this.buttonClear.Location = new System.Drawing.Point(324, 117);
+			this.buttonClear.Name = "buttonClear";
+			this.buttonClear.Size = new System.Drawing.Size(75, 23);
+			this.buttonClear.TabIndex = 12;
+			this.buttonClear.Text = "Clear";
+			this.buttonClear.UseVisualStyleBackColor = true;
+			this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
+			// 
 			// FormSimpleSample
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(447, 144);
+			this.ClientSize = new System.Drawing.Size(673, 144);
+			this.Controls.Add(this.buttonClear);
 			this.Controls.Add(this.buttonOpen);
 			this.Controls.Add(this.comboBoxFormats);
 			this.Controls.Add(this.buttonSave);
@@ -204,6 +216,7 @@
 		private System.Windows.Forms.Button buttonSave;
 		private System.Windows.Forms.ComboBox comboBoxFormats;
 		private System.Windows.Forms.Button buttonOpen;
+		private System.Windows.Forms.Button buttonClear;
 
 	}
 }

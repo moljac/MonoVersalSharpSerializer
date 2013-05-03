@@ -119,5 +119,15 @@ namespace HelloWorldApp
 
 			return;
 		}
+
+		private void buttonClear_Click(object sender, EventArgs e)
+		{
+			this.textBoxNameFirst.Text = "";
+			this.textBoxNameLast.Text = "";
+			this.textBoxAge.Text = "????";
+			this.dateTimePicker1.Value = DateTime.Today;
+
+			return;
+		}
 	}
 }
