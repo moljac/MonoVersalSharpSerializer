@@ -83,9 +83,6 @@
     <Compile Include="..\HelloWorldApp\BusinessObjects.HolisticWare\Person.cs">
       <Link>BusinessObjects.HolisticWare\Person.cs</Link>
     </Compile>
-    <Compile Include="..\HelloWorldApp\BusinessObjects.HolisticWare\Person.DataContract.cs">
-      <Link>BusinessObjects.HolisticWare\Person.DataContract.cs</Link>
-    </Compile>
     <Compile Include="..\HelloWorldApp\BusinessObjects.HolisticWare\Person.Serializable.cs">
       <Link>BusinessObjects.HolisticWare\Person.Serializable.cs</Link>
     </Compile>
