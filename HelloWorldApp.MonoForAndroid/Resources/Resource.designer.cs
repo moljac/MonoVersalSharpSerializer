@@ -60,6 +60,9 @@ namespace HelloWorldApp.MonoForAndroid
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f050011
+			public const int buttonClear = 2131034129;
+			
 			// aapt resource value: 0x7f050005
 			public const int buttonForm2 = 2131034117;
 			

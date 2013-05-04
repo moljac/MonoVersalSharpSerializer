@@ -33,6 +33,9 @@ namespace HelloWorldApp
 		MonoTouch.UIKit.UIButton buttonOpen { get; set; }
 
 		[Outlet]
+		MonoTouch.UIKit.UIButton buttonClear { get; set; }
+
+		[Outlet]
 		MonoTouch.UIKit.UITextField comboBoxFormats { get; set; }
 		
 		void ReleaseDesignerOutlets ()
@@ -70,6 +73,11 @@ namespace HelloWorldApp
 			if (buttonOpen != null) {
 				buttonOpen.Dispose ();
 				buttonOpen = null;
+			}
+
+			if (buttonClear != null) {
+				buttonClear.Dispose ();
+				buttonClear = null;
 			}
 
 			if (comboBoxFormats != null) {

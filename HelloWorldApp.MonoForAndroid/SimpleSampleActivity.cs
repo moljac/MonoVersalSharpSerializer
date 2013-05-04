@@ -23,7 +23,9 @@ namespace HelloWorldApp.MonoForAndroid
 		private Button buttonLoad;
 		private Button buttonSave;
 		private Button buttonOpen;
+		private Button buttonClear;
 		private Spinner comboBoxFormats;
+
 
 		String[] items = new String[] { "Binary Formatter", "XML Serializer","SharpSerializer Binary", "SharpSerializer XML" };
 
@@ -43,6 +45,7 @@ namespace HelloWorldApp.MonoForAndroid
 			buttonLoad = FindViewById<Button> (Resource.Id.buttonLoad);
 			buttonSave = FindViewById<Button> (Resource.Id.buttonSave);
 			buttonOpen = FindViewById<Button> (Resource.Id.buttonOpen);
+			buttonClear = FindViewById<Button> (Resource.Id.buttonClear);
 
 			comboBoxFormats = FindViewById<Spinner> (Resource.Id.comboBoxFormats);
 
