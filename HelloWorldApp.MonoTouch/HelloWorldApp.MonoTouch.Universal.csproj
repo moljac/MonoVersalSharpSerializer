@@ -115,6 +115,15 @@
     <Compile Include="..\HelloWorldApp\BusinessObjects\RootContainer.cs">
       <Link>BusinessObjects\RootContainer.cs</Link>
     </Compile>
+    <Compile Include="..\HelloWorldApp\Form1.XP.Shared.cs">
+      <Link>Form1.XP.Shared.cs</Link>
+    </Compile>
+    <Compile Include="..\HelloWorldApp\Form1.XP.Shared.HelperClasses.cs">
+      <Link>Form1.XP.Shared.HelperClasses.cs</Link>
+    </Compile>
+    <Compile Include="..\HelloWorldApp\FormSimpleSample.XP.Shared.cs">
+      <Link>FormSimpleSample.XP.Shared.cs</Link>
+    </Compile>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="MainView.cs" />

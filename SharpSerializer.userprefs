@@ -1,19 +1,9 @@
-<<<<<<< HEAD
-﻿<Properties MonoDevelop.MonoMac.LastXamMacNagTime="04/28/2013 16:58:31">
+﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench />
-=======
-﻿<Properties MonoDevelop.MonoMac.LastXamMacNagTime="05/03/2013 17:01:01">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="HelloWorldApp.MonoTouch/SimpleSampleView.cs">
-    <Files>
-      <File FileName="HelloWorldApp.MonoTouch/SimpleSampleView.designer.cs" Line="1" Column="1" />
-      <File FileName="HelloWorldApp.MonoTouch/SimpleSampleView.cs" Line="1" Column="1" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
->>>>>>> monomac
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.HelloWorldApp.MonoForAndroid AndroidDeviceId-Debug="emulator-5554" />
 </Properties>
