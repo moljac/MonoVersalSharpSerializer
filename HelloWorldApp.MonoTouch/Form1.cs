@@ -7,14 +7,14 @@ using MonoTouch.UIKit;
 
 namespace HelloWorldApp
 {
-	public partial class MainView : UIViewController
+	public partial class Form1 : UIViewController
 	{
 		static bool UserInterfaceIdiomIsPhone {
 			get { return UIDevice.CurrentDevice.UserInterfaceIdiom == UIUserInterfaceIdiom.Phone; }
 		}
 
-		public MainView ()
-			: base (UserInterfaceIdiomIsPhone ? "MainView_iPhone" : "MainView_iPad", null)
+		public Form1 ()
+			: base (UserInterfaceIdiomIsPhone ? "Form1_iPhone" : "Form1_iPad", null)
 		{
 			this.NavigationItem.Title = "www.sharpserializer.com";
 		}
@@ -34,7 +34,7 @@ namespace HelloWorldApp
 			// Perform any additional setup after loading the view, typically from a nib.
 			buttonForm2.TouchUpInside += (object sender, EventArgs e) => 
 			{
-				SimpleSampleView ssv = new SimpleSampleView();
+				FormSimpleSample ssv = new FormSimpleSample();
 				this.NavigationController.PushViewController(ssv,true);
 			};
 

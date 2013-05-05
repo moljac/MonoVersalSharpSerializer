@@ -4,7 +4,7 @@ namespace HelloWorldApp.Mac
 	
     // Should subclass MonoMac.AppKit.NSWindow
     [MonoMac.Foundation.Register("MainWindow")]
-    public partial class MainWindow
+    public partial class Form1
     {
     }
 	

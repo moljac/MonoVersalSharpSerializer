@@ -30,7 +30,7 @@ namespace HelloWorldApp
 			
 			// If you have defined a root view controller, set it here:
 			// window.RootViewController = myViewController;
-			MainView mainView = new MainView();
+			Form1 mainView = new Form1();
 			UINavigationController rootNavigationController = new UINavigationController(mainView);
 
 			this.window.RootViewController = rootNavigationController;

@@ -117,22 +117,22 @@
     </Compile>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="MainView.cs" />
     <Compile Include="MainView.designer.cs">
-      <DependentUpon>MainView.cs</DependentUpon>
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="SimpleSampleView.cs" />
     <Compile Include="SimpleSampleView.designer.cs">
-      <DependentUpon>SimpleSampleView.cs</DependentUpon>
+      <DependentUpon>FormSimpleSample.cs</DependentUpon>
     </Compile>
     <Compile Include="PickerModel.cs" />
+    <Compile Include="Form1.cs" />
+    <Compile Include="FormSimpleSample.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <InterfaceDefinition Include="MainView_iPhone.xib" />
-    <InterfaceDefinition Include="MainView_iPad.xib" />
-    <InterfaceDefinition Include="SimpleSampleView_iPhone.xib" />
-    <InterfaceDefinition Include="SimpleSampleView_iPad.xib" />
+    <InterfaceDefinition Include="Form1_iPad.xib" />
+    <InterfaceDefinition Include="Form1_iPhone.xib" />
+    <InterfaceDefinition Include="FormSimpleSample_iPad.xib" />
+    <InterfaceDefinition Include="FormSimpleSample_iPhone.xib" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SharpSerializer.Library.MonoTouch\SharpSerializer.Library.MonoTouch.csproj">
