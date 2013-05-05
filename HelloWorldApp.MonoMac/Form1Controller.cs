@@ -38,11 +38,11 @@ namespace HelloWorldApp.Mac
 		#endregion
 		
         //strongly typed window accessor
-        public new MainWindow Window
+        public new Form1 Window
         {
             get
             {
-                return (MainWindow)base.Window;
+                return (Form1)base.Window;
             }
         }
     }

@@ -7,13 +7,13 @@ using MonoTouch.UIKit;
 
 namespace HelloWorldApp
 {
-	public partial class SimpleSampleView : UIViewController
+	public partial class FormSimpleSample : UIViewController
 	{
 		static bool UserInterfaceIdiomIsPhone {
 			get { return UIDevice.CurrentDevice.UserInterfaceIdiom == UIUserInterfaceIdiom.Phone; }
 		}
 
-		public SimpleSampleView ()
+		public FormSimpleSample ()
 			: base (UserInterfaceIdiomIsPhone ? "SimpleSampleView_iPhone" : "SimpleSampleView_iPad", null)
 		{
 		}

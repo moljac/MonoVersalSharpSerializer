@@ -9,7 +9,7 @@ using MonoTouch.Foundation;
 namespace HelloWorldApp
 {
 	[Register ("MainView")]
-	partial class MainView
+	partial class Form1
 	{
 		[Outlet]
 		MonoTouch.UIKit.UIButton serializeXmlButton { get; set; }

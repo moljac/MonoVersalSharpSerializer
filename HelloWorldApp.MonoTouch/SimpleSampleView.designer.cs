@@ -9,7 +9,7 @@ using MonoTouch.Foundation;
 namespace HelloWorldApp
 {
 	[Register ("SimpleSampleView")]
-	partial class SimpleSampleView
+	partial class FormSimpleSample
 	{
 		[Outlet]
 		MonoTouch.UIKit.UITextField textBoxNameFirst { get; set; }
