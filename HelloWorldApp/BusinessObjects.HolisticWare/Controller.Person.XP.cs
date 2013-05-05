@@ -9,10 +9,17 @@ namespace HelloWorldApp.BusinessObjects
 {
 	public partial class ControllerPersonOperations
 	{
+		public static string StorageRoot = "";
+
 		public static byte[] Read(string filename)
 		{
 			MemoryStream ms = new MemoryStream();
-			FileStream file = new FileStream(filename, FileMode.Open, FileAccess.Read);
+			FileStream file = new FileStream
+									(
+									  Path.Combine(ControllerPersonOperations.StorageRoot, filename)
+									, FileMode.Open
+									, FileAccess.Read
+									);
 			byte[] bytes = new byte[file.Length];
 			file.Read(bytes, 0, (int)file.Length);
 			ms.Write(bytes, 0, (int)file.Length);
@@ -24,7 +31,12 @@ namespace HelloWorldApp.BusinessObjects
 
 		public static void Write(MemoryStream ms, string filename)
 		{
-			FileStream file = new FileStream(filename, FileMode.Create, System.IO.FileAccess.Write);
+			FileStream file = new FileStream
+									(
+									  Path.Combine(ControllerPersonOperations.StorageRoot, filename)
+									, FileMode.Create
+									, System.IO.FileAccess.Write
+									);
 			byte[] bytes = ms.ToArray();
 			file.Write(bytes, 0, bytes.Length);
 			file.Close();

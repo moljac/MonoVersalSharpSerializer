@@ -69,6 +69,9 @@
     <Compile Include="BusinessObjects\GenericObject.cs" />
     <Compile Include="BusinessObjects.HolisticWare\Person.cs" />
     <Compile Include="BusinessObjects\RootContainer.cs" />
+    <Compile Include="FormSimpleSample.XP.Shared.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.XP.Shared.cs">
       <SubType>Form</SubType>
     </Compile>

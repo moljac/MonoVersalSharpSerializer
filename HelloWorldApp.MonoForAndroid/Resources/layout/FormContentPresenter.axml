@@ -66,7 +66,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@id/textView3"
-        android:id="@+id/textBoxAge"
+        android:id="@+id/editText1"
         android:layout_alignBaseline="@id/textView4"
         android:singleLine="true"
         android:text="-1" />

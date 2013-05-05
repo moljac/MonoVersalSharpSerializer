@@ -4,7 +4,6 @@ using Polenter.Serialization;
 using System.Diagnostics;
 using HelloWorldApp.BusinessObjects;
 using System.Collections.Generic;
-using System.Windows.Forms;
 
 namespace HelloWorldApp
 {
@@ -25,7 +24,7 @@ namespace HelloWorldApp
 	/// </summary>
 	public partial class Form1
 	{
-		private void serialize(object obj, SharpSerializer serializer, string shortFilename)
+		private string serialize(object obj, SharpSerializer serializer, string shortFilename)
 		{
 			// Serializing the first object
 			var file1 = getFullFilename(shortFilename, "1");
@@ -39,14 +38,17 @@ namespace HelloWorldApp
 			serializer.Serialize(obj2, file2);
 
 			// Comparing two files
-			compareTwoFiles(file1, file2);
+			string retval = compareTwoFiles(file1, file2);
 
 			// Show files in explorer
 			showInExplorer(file1);
+
+			return retval;
 		}
 
-		private void compareTwoFiles(string file1, string file2)
+		private string compareTwoFiles(string file1, string file2)
 		{
+			string retval = default(string);
 			// comparing
 			var fileInfo1 = new FileInfo(file1);
 			var fileInfo2 = new FileInfo(file2);
@@ -60,27 +62,24 @@ namespace HelloWorldApp
 				for (int i = 0; i < content1.Length; i++)
 					if (content1[i] != content2[i])
 					{
-						MessageBox.Show(string.Format("Files differ at offset {0}", i));
-						return;
+						//MessageBox.Show(string.Format("Files differ at offset {0}", i));
+						retval = string.Format("Files differ at offset {0}", i);
+						return retval;
 					}
 
-				MessageBox.Show(string.Format("Both files have the same length of {0} bytes and the same content", fileInfo1.Length));
+				// MessageBox.Show(string.Format("Both files have the same length of {0} bytes and the same content", fileInfo1.Length));
+				retval = string.Format("Both files have the same length of {0} bytes and the same content", fileInfo1.Length);
 			}
 			else
 			{
-				MessageBox.Show(string.Format("Length of file1: {0}, Length of file2: {1}", fileInfo1.Length,
-											  fileInfo2.Length));
+				//MessageBox.Show(string.Format("Length of file1: {0}, Length of file2: {1}", fileInfo1.Length,
+				//							  fileInfo2.Length));
+				retval = string.Format("Length of file1: {0}, Length of file2: {1}", fileInfo1.Length,fileInfo2.Length);
 			}
+
+			return retval;
 		}
 
-		public void showInExplorer(string filename)
-		{
-			if (!string.IsNullOrEmpty(filename) && File.Exists(filename))
-			{
-				string arguments = string.Format("/n, /select, \"{0}\"", filename);
-				Process.Start("explorer", arguments);
-			}
-		}
 
 		private static string getFullFilename(string shortFilename, string nameSufix)
 		{
@@ -89,7 +88,11 @@ namespace HelloWorldApp
 
 			// do not want to spit all over the desktop (there is no desktop in mobile)
 			//
-			var folder = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+			var folder = 
+					Environment.GetFolderPath(Environment.SpecialFolder.Personal)
+					//@"."	// Android Access Denied
+					;
+			ControllerPersonOperations.StorageRoot = folder;
 
 			var filenameWithoutExtension = string.Format("{0}{1}", Path.GetFileNameWithoutExtension(shortFilename),
 														 nameSufix);
@@ -387,9 +390,12 @@ namespace HelloWorldApp
 			var filename = "sharpSerializerExample.xml";
 
 			// serialize
-			serialize(obj, serializer, filename);
+			SerializationMessage = serialize(obj, serializer, filename);
+
+			return;
 		}
 
+		string SerializationMessage = default(string);
 
 		public void serializeSizeOptimizedBinary_Click(object sender, EventArgs e)
 		{

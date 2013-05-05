@@ -8,14 +8,17 @@
     <ProjectGuid>{4A5A3F82-7A22-4E07-A718-1A96142CF46D}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>HelloWorldApp.MonoForAndroid</RootNamespace>
+    <RootNamespace>HelloWorldApp</RootNamespace>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <AndroidResgenClass>Resource</AndroidResgenClass>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AssemblyName>HelloWorldApp.MonoForAndroid</AssemblyName>
-    <TargetFrameworkVersion>v4.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v2.2</TargetFrameworkVersion>
+    <AndroidSupportedAbis>armeabi%3barmeabi-v7a%3bx86</AndroidSupportedAbis>
+    <AndroidStoreUncompressedFileExtensions />
+    <MandroidI18n />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -72,14 +75,26 @@
     <Compile Include="..\HelloWorldApp\BusinessObjects\RootContainer.cs">
       <Link>BusinessObjects\RootContainer.cs</Link>
     </Compile>
+    <Compile Include="..\HelloWorldApp\Form1.XP.Shared.cs">
+      <Link>Form1.XP.Shared.cs</Link>
+    </Compile>
+    <Compile Include="..\HelloWorldApp\Form1.XP.Shared.HelperClasses.cs">
+      <Link>Form1.XP.Shared.HelperClasses.cs</Link>
+    </Compile>
+    <Compile Include="..\HelloWorldApp\FormSimpleSample.XP.Shared.cs">
+      <Link>FormSimpleSample.XP.Shared.cs</Link>
+    </Compile>
+    <Compile Include="FormContentPresenter.cs" />
+    <Compile Include="CrossPlatformPatches\WindowsForms2Android\EditText.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SimpleSampleActivity.cs" />
+    <Compile Include="FormSimpleSample.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
+    <AndroidResource Include="Resources\layout\FormContentPresenter.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml" />
