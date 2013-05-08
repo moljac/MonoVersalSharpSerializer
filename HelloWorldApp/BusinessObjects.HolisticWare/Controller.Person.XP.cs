@@ -42,7 +42,10 @@ namespace HelloWorldApp.BusinessObjects
 			file.Close();
 			ms.Close();
 
-			string content = System.Text.Encoding.UTF8.GetString(bytes);
+			string content = 
+				// System.Text.Encoding.UTF8.GetString(bytes)  // WP lacks this
+				System.Text.Encoding.UTF8.GetString(bytes,0,bytes.Length)
+				;
 
 			return;
 		}

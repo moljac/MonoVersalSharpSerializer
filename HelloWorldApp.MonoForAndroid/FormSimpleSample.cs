@@ -16,7 +16,7 @@ using HelloWorldApp.BusinessObjects;
 
 namespace HelloWorldApp
 {
-	[Activity (Label = "Simple Sample")]			
+	[Activity(Label = "Simple Sample")]
 	public partial class FormSimpleSample : Activity
 	{
 		private DateTime date;
@@ -41,33 +41,33 @@ namespace HelloWorldApp
 
 		const int DATE_DIALOG_ID = 0;
 
-		protected override void OnCreate (Bundle bundle)
+		protected override void OnCreate(Bundle bundle)
 		{
-			base.OnCreate (bundle);
+			base.OnCreate(bundle);
 
 			// Create your application here
-			SetContentView (Resource.Layout.SimpleSample);
+			SetContentView(Resource.Layout.SimpleSample);
 
-			textBoxNameFirst = FindViewById<EditText> (Resource.Id.textBoxNameFirst);
-			textBoxNameLast = FindViewById<EditText> (Resource.Id.textBoxNameLast);
+			textBoxNameFirst = FindViewById<EditText>(Resource.Id.textBoxNameFirst);
+			textBoxNameLast = FindViewById<EditText>(Resource.Id.textBoxNameLast);
 			textBoxAge = FindViewById<EditText>(Resource.Id.textBoxAge);
 			dateTimePicker1 = FindViewById<EditText>(Resource.Id.dateTimePicker1);
 
-			buttonLoad = FindViewById<Button> (Resource.Id.buttonLoad);
-			buttonSave = FindViewById<Button> (Resource.Id.buttonSave);
-			buttonOpen = FindViewById<Button> (Resource.Id.buttonOpen);
-			buttonClear = FindViewById<Button> (Resource.Id.buttonClear);
+			buttonLoad = FindViewById<Button>(Resource.Id.buttonLoad);
+			buttonSave = FindViewById<Button>(Resource.Id.buttonSave);
+			buttonOpen = FindViewById<Button>(Resource.Id.buttonOpen);
+			buttonClear = FindViewById<Button>(Resource.Id.buttonClear);
 
-			comboBoxFormats = FindViewById<Spinner> (Resource.Id.comboBoxFormats);
+			comboBoxFormats = FindViewById<Spinner>(Resource.Id.comboBoxFormats);
 
 			dateTimePicker1.Click += DateChooser;
 			date = DateTime.Today;
 
 			ArrayAdapter ad = new ArrayAdapter(this, Android.Resource.Layout.SimpleSpinnerItem, items);
 			ad.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
-			
+
 			comboBoxFormats.Adapter = ad;
-			comboBoxFormats.ItemSelected += (sender, e) => 
+			comboBoxFormats.ItemSelected += (sender, e) =>
 			{
 				//var s = sender as Spinner;
 				//Toast.MakeText(this, "My favorite is " + s.GetItemAtPosition(e.Position), ToastLength.Short).Show();
@@ -76,7 +76,7 @@ namespace HelloWorldApp
 
 			var folder =
 					System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal)
-					//@"."	// Android Access Denied
+				//@"."	// Android Access Denied
 					;
 			ControllerPersonOperations.StorageRoot = folder;
 
@@ -90,9 +90,9 @@ namespace HelloWorldApp
 
 		}
 
-		void DateChooser (object sender, EventArgs e)
+		void DateChooser(object sender, EventArgs e)
 		{
-			ShowDialog (DATE_DIALOG_ID);
+			ShowDialog(DATE_DIALOG_ID);
 		}
 
 		// updates the date in the TextView
@@ -102,10 +102,10 @@ namespace HelloWorldApp
 		}
 
 		// the event received when the user "sets" the date in the dialog
-		void OnDateSet (object sender, DatePickerDialog.DateSetEventArgs e)
+		void OnDateSet(object sender, DatePickerDialog.DateSetEventArgs e)
 		{
 			this.date = e.Date;
-			UpdateDisplay ();
+			UpdateDisplay();
 		}
 
 		void NavigateToFormContentPresenter(object sender, EventArgs e)
@@ -115,12 +115,21 @@ namespace HelloWorldApp
 
 		protected override Dialog OnCreateDialog(int id)
 		{
-			switch (id) {
-			case DATE_DIALOG_ID:
-				return new DatePickerDialog (this, OnDateSet, date.Year, date.Month - 1, date.Day); 
+			switch (id)
+			{
+				case DATE_DIALOG_ID:
+					return new DatePickerDialog(this, OnDateSet, date.Year, date.Month - 1, date.Day);
 			}
 			return null;
 		}
+
+
+
+
+
+
+
+
 
 		# region    Platform dependant code (port needed)
 		//-------------------------------------------------------------------------
@@ -131,7 +140,7 @@ namespace HelloWorldApp
 				string name = comboBoxFormats.SelectedItem.ToString();
 				//FormContentPersenter fcp = new FormContentPersenter(name);
 				//fcp.Show();
-				NavigateToFormContentPresenter(sender,e);
+				NavigateToFormContentPresenter(sender, e);
 			}
 
 			return;
@@ -148,24 +157,92 @@ namespace HelloWorldApp
 			return;
 		}
 		//-------------------------------------------------------------------------
-		private HelloWorldApp.BusinessObjects.Person UIToObject()
+		private Person UIToObject()
 		{
-			DateTime dob = default(DateTime);
-			DateTime.TryParse(this.dateTimePicker1.Text, out dob);
+			object o = comboBoxFormats.SelectedItem;
+			Person p = default(Person);
 
-			HelloWorldApp.BusinessObjects.Person p = new HelloWorldApp.BusinessObjects.Person()
+			if (null == o)
 			{
-			  NameFirst = this.textBoxNameFirst.Text
-			, NameLast = this.textBoxNameLast.Text
-			, DateOfBirth = dob
-			};
+				return p;
+			}
+			else
+			{
+				string name = o.ToString();
+
+				DateTime dob = DateTime.Now;
+				DateTime.TryParse(this.dateTimePicker1.Text, out dob);
+
+				p = new Person()
+				{
+				  NameFirst = this.textBoxNameFirst.Text
+				, NameLast = this.textBoxNameLast.Text
+				, DateOfBirth = dob
+				};
+
+				switch (name)
+				{
+					case "Binary Formatter":
+						ControllerPersonOperations.SerializeBinaryFormatter(p);
+						break;
+					case "XmlSerializer":
+						ControllerPersonOperations.SerializeXmlSerializer(p);
+						break;
+					case "SharpSerializer Binary":
+						ControllerPersonOperations.SerializeSharpSerializerBinary(p);
+						break;
+					case "SharpSerializer Xml":
+						ControllerPersonOperations.SerializeSharpSerializerXml(p);
+						break;
+					default:
+						break;
+				}
+			}
 
 			return p;
 		}
 
 		//-------------------------------------------------------------------------
-		private void UIFromObject(HelloWorldApp.BusinessObjects.Person p)
+		private void UIFromObject()
 		{
+			Person p = default(Person);
+
+			// difficult to port (iOS especially)
+			object o = comboBoxFormats.SelectedItem;
+
+			if (null == o)
+			{
+				this.textBoxNameFirst.Text = "";
+				this.textBoxNameLast.Text = "";
+				this.textBoxAge.Text = "????";
+				this.dateTimePicker1.Text = DateTime.Today.ToString();
+
+				return;
+			}
+			else
+			{
+				string name = o.ToString();
+
+				switch (name)
+				{
+					case "Binary Formatter":
+						p = ControllerPersonOperations.DeserializeBinaryFormatter();
+						break;
+					case "XmlSerializer":
+						p = ControllerPersonOperations.DeserializeXmlSerializer();
+						break;
+					case "SharpSerializer Binary":
+						p = ControllerPersonOperations.DeserializeSharpSerializerBinary();
+						break;
+					case "SharpSerializer Xml":
+						p = ControllerPersonOperations.DeserializeSharpSerializerXml();
+						break;
+					default:
+						return;
+					//break;
+				}
+			}
+
 			if (null == p)
 			{
 				this.textBoxNameFirst.Text = "";
@@ -185,6 +262,8 @@ namespace HelloWorldApp
 		}
 		//-------------------------------------------------------------------------
 		# endregion Platform dependant code (port needed)
+
+
 	}
 }
 

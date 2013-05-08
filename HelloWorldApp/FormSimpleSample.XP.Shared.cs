@@ -9,80 +9,16 @@ namespace HelloWorldApp
 {
 	public partial class FormSimpleSample
 	{
-
 		private void buttonLoad_Click(object sender, EventArgs e)
 		{
-			object o = comboBoxFormats.SelectedItem;
-
-			if (null == o)
-			{
-				return;
-			}
-			else
-			{
-				Person p = null;
-				string name = comboBoxFormats.SelectedItem.ToString();
-
-				switch (name)
-				{
-					case "Binary Formatter":
-						p = ControllerPersonOperations.DeserializeBinaryFormatter();
-						break;
-					case "XmlSerializer":
-						p = ControllerPersonOperations.DeserializeXmlSerializer();
-						break;
-					case "SharpSerializer Binary":
-						p = ControllerPersonOperations.DeserializeSharpSerializerBinary();
-						break;
-					case "SharpSerializer Xml":
-						p = ControllerPersonOperations.DeserializeSharpSerializerXml();
-						break;
-					default:
-						return;
-					//break;
-				}
-
-				UIFromObject(p);
-			}
+			UIFromObject();
 
 			return;
 		}
 
-
 		private void buttonSave_Click(object sender, EventArgs e)
 		{
-			object o = comboBoxFormats.SelectedItem;
-
-			if (null == o)
-			{
-				return;
-			}
-			else
-			{
-				Person p = UIToObject();
-
-				string name = comboBoxFormats.SelectedItem.ToString();
-
-				switch (name)
-				{
-					case "Binary Formatter":
-						ControllerPersonOperations.SerializeBinaryFormatter(p);
-						break;
-					case "XmlSerializer":
-						ControllerPersonOperations.SerializeXmlSerializer(p);
-						break;
-					case "SharpSerializer Binary":
-						ControllerPersonOperations.SerializeSharpSerializerBinary(p);
-						break;
-					case "SharpSerializer Xml":
-						ControllerPersonOperations.SerializeSharpSerializerXml(p);
-						break;
-					default:
-						return;
-					//break;
-				}
-
-			}
+			Person p = UIToObject();
 
 			return;
 		}
@@ -90,8 +26,7 @@ namespace HelloWorldApp
 
 		private void buttonClear_Click(object sender, EventArgs e)
 		{
-			Person p = null;
-			UIFromObject(p);
+			UIFromObject();
 
 			return;
 		}

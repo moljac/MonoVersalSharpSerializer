@@ -98,6 +98,12 @@
     <Compile Include="..\HelloWorldApp\BusinessObjects\RootContainer.cs">
       <Link>BusinessObjects\RootContainer.cs</Link>
     </Compile>
+    <Compile Include="..\HelloWorldApp\Form1.SharpSerializer.cs">
+      <Link>Form1.SharpSerializer.cs</Link>
+    </Compile>
+    <Compile Include="..\HelloWorldApp\Form1.SharpSerializer.WF.cs">
+      <Link>Form1.SharpSerializer.WF.cs</Link>
+    </Compile>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="AppDelegate.designer.cs">

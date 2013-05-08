@@ -49,6 +49,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Phone" />
+    <Reference Include="Microsoft.Phone.Controls.Toolkit, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b772ad94eb9ca604, processorArchitecture=MSIL">
+      <HintPath>..\packages\WPtoolkit.4.2012.10.30\lib\sl4-windowsphone71\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Phone.Interop" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Windows" />
@@ -57,11 +60,9 @@
     <Reference Include="System.Net" />
     <Reference Include="System.Xml" />
     <Reference Include="mscorlib.extensions" />
+    <Reference Include="System.Xml.Serialization" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\HelloWorldApp\BusinessObjects.HolisticWare\Controller.Person.netfx30.cs">
-      <Link>BusinessObjects.HolisticWare\Controller.Person.netfx30.cs</Link>
-    </Compile>
     <Compile Include="..\HelloWorldApp\BusinessObjects.HolisticWare\Controller.Person.XP.cs">
       <Link>BusinessObjects.HolisticWare\Controller.Person.XP.cs</Link>
     </Compile>
@@ -86,11 +87,28 @@
     <Compile Include="..\HelloWorldApp\BusinessObjects\RootContainer.cs">
       <Link>BusinessObjects\RootContainer.cs</Link>
     </Compile>
+    <Compile Include="..\HelloWorldApp\Form1.SharpSerializer.cs">
+      <Link>Form1.SharpSerializer.cs</Link>
+    </Compile>
+    <Compile Include="..\HelloWorldApp\Form1.SharpSerializer.WF.cs">
+      <Link>Form1.SharpSerializer.WF.cs</Link>
+    </Compile>
+    <Compile Include="..\HelloWorldApp\Form1.XP.Shared.cs">
+      <Link>Form1.XP.Shared.cs</Link>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
+    <Compile Include="BusinessObjects.HolisticWare\Controller.Person.WP.cs" />
+    <Compile Include="Form1.Navigation.WP.cs" />
+    <Compile Include="FormContentPresenter.xaml.cs">
+      <DependentUpon>FormContentPresenter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.xaml.cs">
+      <DependentUpon>Form1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FormSimpleSample.xaml.cs">
+      <DependentUpon>FormSimpleSample.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -99,12 +117,21 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
-    <Page Include="MainPage.xaml">
+    <Page Include="FormContentPresenter.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FormSimpleSample.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
     <None Include="Properties\AppManifest.xml" />
     <None Include="Properties\WMAppManifest.xml" />
   </ItemGroup>
@@ -115,7 +142,12 @@
     <Content Include="Background.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="README_FIRST.txt" />
     <Content Include="SplashScreenImage.jpg" />
+    <Resource Include="Toolkit.Content\ApplicationBar.Cancel.png" />
+    <Resource Include="Toolkit.Content\ApplicationBar.Check.png" />
+    <Resource Include="Toolkit.Content\ApplicationBar.Delete.png" />
+    <Resource Include="Toolkit.Content\ApplicationBar.Select.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SharpSerializer.Library.WindowsPhone71\SharpSerializer.Library.WindowsPhone71.csproj">

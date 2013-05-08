@@ -11,12 +11,11 @@ using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
 
-namespace HelloWorldApp.WindowsPhone71
+namespace HelloWorldApp
 {
-	public partial class MainPage : PhoneApplicationPage
+	public partial class FormContentPresenter : PhoneApplicationPage
 	{
-		// Constructor
-		public MainPage()
+		public FormContentPresenter()
 		{
 			InitializeComponent();
 		}

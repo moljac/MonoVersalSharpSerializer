@@ -43,6 +43,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\HelloWorldApp\BusinessObjects.HolisticWare\Controller.Person.netfx30.cs">
+      <Link>BusinessObjects.HolisticWare\Controller.Person.netfx30.cs</Link>
+    </Compile>
+    <Compile Include="..\HelloWorldApp\BusinessObjects.HolisticWare\Controller.Person.XP.cs">
+      <Link>BusinessObjects.HolisticWare\Controller.Person.XP.cs</Link>
+    </Compile>
+    <Compile Include="..\HelloWorldApp\BusinessObjects.HolisticWare\Controller.Person.XP.SharpSerializer.cs">
+      <Link>BusinessObjects.HolisticWare\Controller.Person.XP.SharpSerializer.cs</Link>
+    </Compile>
+    <Compile Include="..\HelloWorldApp\BusinessObjects.HolisticWare\Person.cs">
+      <Link>BusinessObjects.HolisticWare\Person.cs</Link>
+    </Compile>
+    <Compile Include="..\HelloWorldApp\BusinessObjects.HolisticWare\Person.Serializable.cs">
+      <Link>BusinessObjects.HolisticWare\Person.Serializable.cs</Link>
+    </Compile>
     <Compile Include="..\HelloWorldApp\BusinessObjects\AdvancedStruct.cs">
       <Link>BusinessObjects\AdvancedStruct.cs</Link>
     </Compile>
@@ -52,11 +67,17 @@
     <Compile Include="..\HelloWorldApp\BusinessObjects\GenericObject.cs">
       <Link>BusinessObjects\GenericObject.cs</Link>
     </Compile>
+    <Compile Include="..\HelloWorldApp\Form1.SharpSerializer.cs">
+      <Link>Form1.SharpSerializer.cs</Link>
+    </Compile>
+    <Compile Include="..\HelloWorldApp\Form1.SharpSerializer.WF.cs">
+      <Link>Form1.SharpSerializer.WF.cs</Link>
+    </Compile>
+    <Compile Include="..\HelloWorldApp\Form1.WF.cs">
+      <Link>Form1.WF.cs</Link>
+    </Compile>
     <Compile Include="..\HelloWorldApp\Form1.XP.Shared.cs">
       <Link>Form1.XP.Shared.cs</Link>
-    </Compile>
-    <Compile Include="..\HelloWorldApp\Form1.XP.Shared.HelperClasses.cs">
-      <Link>Form1.XP.Shared.HelperClasses.cs</Link>
     </Compile>
     <Compile Include="BusinessObjects\RootContainer.cs" />
     <Compile Include="Patches\MessageBox.cs" />

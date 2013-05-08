@@ -43,19 +43,87 @@ namespace HelloWorldApp
 		//-------------------------------------------------------------------------
 		private Person UIToObject()
 		{
-			Person p = new Person()
+			object o = comboBoxFormats.SelectedItem;
+			Person p = default(Person);
+
+			if (null == o)
 			{
-			  NameFirst = this.textBoxNameFirst.Text
-			, NameLast = this.textBoxNameLast.Text
-			, DateOfBirth = this.dateTimePicker1.Value
-			};
+				return p;
+			}
+			else
+			{
+				string name = o.ToString();
+
+				p = new Person()
+				{ 
+				  NameFirst = this.textBoxNameFirst.Text
+				, NameLast = this.textBoxNameLast.Text
+				, DateOfBirth = this.dateTimePicker1.Value
+				};
+
+				switch (name)
+				{
+					case "Binary Formatter":
+						ControllerPersonOperations.SerializeBinaryFormatter(p);
+						break;
+					case "XmlSerializer":
+						ControllerPersonOperations.SerializeXmlSerializer(p);
+						break;
+					case "SharpSerializer Binary":
+						ControllerPersonOperations.SerializeSharpSerializerBinary(p);
+						break;
+					case "SharpSerializer Xml":
+						ControllerPersonOperations.SerializeSharpSerializerXml(p);
+						break;
+					default:
+						break;
+				}
+			}
 
 			return p;
 		}
 
 		//-------------------------------------------------------------------------
-		private void UIFromObject(Person p)
+		private void UIFromObject()
 		{
+			Person p = default(Person);
+
+			// difficult to port (iOS especially)
+			object o = comboBoxFormats.SelectedItem;
+
+			if (null == o)
+			{
+				this.textBoxNameFirst.Text = "";
+				this.textBoxNameLast.Text = "";
+				this.textBoxAge.Text = "????";
+				this.dateTimePicker1.Value = DateTime.Today;
+
+				return;
+			}
+			else
+			{
+				string name = o.ToString();
+
+				switch (name)
+				{
+					case "Binary Formatter":
+						p = ControllerPersonOperations.DeserializeBinaryFormatter();
+						break;
+					case "XmlSerializer":
+						p = ControllerPersonOperations.DeserializeXmlSerializer();
+						break;
+					case "SharpSerializer Binary":
+						p = ControllerPersonOperations.DeserializeSharpSerializerBinary();
+						break;
+					case "SharpSerializer Xml":
+						p = ControllerPersonOperations.DeserializeSharpSerializerXml();
+						break;
+					default:
+						return;
+					//break;
+				}	
+			}
+
 			if (null == p)
 			{
 				this.textBoxNameFirst.Text = "";
@@ -75,5 +143,6 @@ namespace HelloWorldApp
 		}
 		//-------------------------------------------------------------------------
 		# endregion Platform dependant code (port needed)
+
 	}
 }

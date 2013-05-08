@@ -13,7 +13,7 @@ using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 
-namespace HelloWorldApp.WindowsPhone71
+namespace HelloWorldApp
 {
 	public partial class App : Application
 	{

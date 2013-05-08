@@ -7,6 +7,10 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 
+
+
+using HelloWorldApp.BusinessObjects;
+
 namespace HelloWorldApp
 {
 	[Activity (Label = "www.sharpserializer.com", MainLauncher = true)]

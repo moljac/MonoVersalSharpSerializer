@@ -54,10 +54,12 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="System.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BusinessObjects\AdvancedStruct.cs" />
@@ -69,6 +71,18 @@
     <Compile Include="BusinessObjects\GenericObject.cs" />
     <Compile Include="BusinessObjects.HolisticWare\Person.cs" />
     <Compile Include="BusinessObjects\RootContainer.cs" />
+    <Compile Include="Form1.SharpSerializer.WF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.SharpSerializer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Navigation.WF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.WF.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormSimpleSample.XP.Shared.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,9 +94,6 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form1.XP.Shared.HelperClasses.cs">
-      <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormContentPresenter.cs">
       <SubType>Form</SubType>
@@ -100,6 +111,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FormContentPresenter.resx">
       <DependentUpon>FormContentPresenter.cs</DependentUpon>
