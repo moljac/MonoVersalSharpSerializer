@@ -16,7 +16,7 @@ namespace HelloWorldApp
 		}
 
 		public FormSimpleSample ()
-			: base (UserInterfaceIdiomIsPhone ? "SimpleSampleView_iPhone" : "SimpleSampleView_iPad", null)
+			: base (UserInterfaceIdiomIsPhone ? "FormSimpleSample_iPhone" : "FormSimpleSample_iPad", null)
 		{
 		}
 		
@@ -35,6 +35,8 @@ namespace HelloWorldApp
 			// Perform any additional setup after loading the view, typically from a nib.
 			DateChooser();
 			FormatChooser();
+
+			buttonOpen.TouchUpInside += buttonOpen_Click;
 
 		}
 
@@ -103,11 +105,13 @@ namespace HelloWorldApp
 		//-------------------------------------------------------------------------
 		private void buttonOpen_Click(object sender, EventArgs e)
 		{
-			{
+
 				string name = comboBoxFormats.Text;
 				FormContentPresenter fcp = new FormContentPresenter(name);
+				this.NavigationController.PresentViewController (fcp, true, null);
+
 				//fcp.Push();
-			}
+			System.Diagnostics.Debug.WriteLine ("BUTTON OPEN CLICKED!");
 
 			return;
 		}

@@ -5,6 +5,12 @@ using System.Drawing;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 
+
+using System.Xml;
+using HelloWorldApp.BusinessObjects;
+using Polenter.Serialization;
+using System.IO;
+
 namespace HelloWorldApp
 {
 	public partial class Form1 : UIViewController
@@ -17,6 +23,8 @@ namespace HelloWorldApp
 			: base (UserInterfaceIdiomIsPhone ? "Form1_iPhone" : "Form1_iPad", null)
 		{
 			this.NavigationItem.Title = "www.sharpserializer.com";
+
+
 		}
 		
 		public override void DidReceiveMemoryWarning ()

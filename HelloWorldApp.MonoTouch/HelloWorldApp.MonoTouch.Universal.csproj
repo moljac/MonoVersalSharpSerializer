@@ -127,18 +127,21 @@
     <Compile Include="..\HelloWorldApp\FormSimpleSample.XP.Shared.cs">
       <Link>FormSimpleSample.XP.Shared.cs</Link>
     </Compile>
-    <Compile Include="FormContentPresenter.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="MainView.designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="SimpleSampleView.designer.cs">
-      <DependentUpon>FormSimpleSample.cs</DependentUpon>
-    </Compile>
     <Compile Include="PickerModel.cs" />
     <Compile Include="Form1.cs" />
     <Compile Include="FormSimpleSample.cs" />
+    <Compile Include="FormSimpleSample.designer.cs">
+      <DependentUpon>FormSimpleSample.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContentPresenter.cs" />
+    <Compile Include="FormContentPresenter.designer.cs">
+      <DependentUpon>FormContentPresenter.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -146,6 +149,8 @@
     <InterfaceDefinition Include="Form1_iPhone.xib" />
     <InterfaceDefinition Include="FormSimpleSample_iPad.xib" />
     <InterfaceDefinition Include="FormSimpleSample_iPhone.xib" />
+    <InterfaceDefinition Include="FormContentPresenter_iPhone.xib" />
+    <InterfaceDefinition Include="FormContentPresenter_iPad.xib" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SharpSerializer.Library.MonoTouch\SharpSerializer.Library.MonoTouch.csproj">

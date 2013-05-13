@@ -8,7 +8,7 @@ using MonoTouch.Foundation;
 
 namespace HelloWorldApp
 {
-	[Register ("SimpleSampleView")]
+	[Register ("FormSimpleSample")]
 	partial class FormSimpleSample
 	{
 		[Outlet]
