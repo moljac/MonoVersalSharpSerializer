@@ -26,14 +26,8 @@ namespace HelloWorldApp
 
 		private void buttonClear_Click(object sender, EventArgs e)
 		{
-			UIFromObject();
-
-			textBoxNameFirst.Text = String.Empty; 
-			textBoxNameLast.Text = String.Empty;
-			textBoxAge.Text = String.Empty;
-			dateTimePicker1.Text = String.Empty;
-			comboBoxFormats.Text = String.Empty;
-
+  			UIFromObject();
+            
 			return;
 		}
 	}

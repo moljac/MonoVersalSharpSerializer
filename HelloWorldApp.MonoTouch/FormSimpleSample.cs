@@ -54,7 +54,7 @@ namespace HelloWorldApp
 			dateTimePicker1.InputView = datePicker;
 			dateTimePicker1.InputAccessoryView = datePickerDismissalView(datePicker,dateTimePicker1);
 
-
+            return;
 		}
 
 		void FormatChooser ()
@@ -178,20 +178,27 @@ namespace HelloWorldApp
 			return p;
 		}
 
+        private void UIReset()
+        {
+            this.textBoxNameFirst.Text = "";
+            this.textBoxNameLast.Text = "";
+            this.textBoxAge.Text = "????";
+            this.dateTimePicker1.Text = DateTime.Today.ToString();
+            
+            return;
+        }
+
 		//-------------------------------------------------------------------------
 		private void UIFromObject()
 		{
-			Person p = default(Person);
-
+            Person p = default(Person);
+            
 			// difficult to port (iOS especially)
 			object o = comboBoxFormats.Text;
 
 			if (null == o)
 			{
-				this.textBoxNameFirst.Text = "";
-				this.textBoxNameLast.Text = "";
-				this.textBoxAge.Text = "????";
-				this.dateTimePicker1.Text = DateTime.Today.ToString();
+				UIReset();
 
 				return;
 			}
