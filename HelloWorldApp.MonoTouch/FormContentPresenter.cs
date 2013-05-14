@@ -3,6 +3,9 @@ using System.Drawing;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 
+
+using HelloWorldApp.BusinessObjects;
+
 namespace HelloWorldApp
 {
 	public partial class FormContentPresenter : UIViewController
@@ -40,8 +43,9 @@ namespace HelloWorldApp
 
 			//TEXT BOX - textBoxContent
 			//	textBoxContent
+			textBoxContent.Text = ControllerPersonOperations.LoadFileTextual(name);
 
-
+			return;
 		}
 
 		partial void buttonDone (NSObject sender)

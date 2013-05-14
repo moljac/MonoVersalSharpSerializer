@@ -24,7 +24,7 @@ namespace HelloWorldApp.BusinessObjects
 			var serializer = new Polenter.Serialization.SharpSerializer(true);
 
 			// serialize
-			serializer.Serialize(p, "Person.SharpSerializer.bin");
+			serializer.Serialize(p, Path.Combine(path_root, "Person.SharpSerializer.bin"));
 
 			return;
 		}
@@ -40,7 +40,7 @@ namespace HelloWorldApp.BusinessObjects
 			var serializer = new Polenter.Serialization.SharpSerializer(false);
 
 			// serialize
-			serializer.Serialize(p, "Person.SharpSerializer.xml");
+			serializer.Serialize(p, Path.Combine(path_root, "Person.SharpSerializer.xml"));
 
 			return;
 		}
@@ -55,7 +55,7 @@ namespace HelloWorldApp.BusinessObjects
 			var serializer = new Polenter.Serialization.SharpSerializer(true);
 
 			// deserialize
-			p = (Person) serializer.Deserialize("Person.SharpSerializer.bin");
+			p = (Person) serializer.Deserialize(Path.Combine(path_root, "Person.SharpSerializer.bin"));
 
 			return p;
 		}
@@ -69,7 +69,7 @@ namespace HelloWorldApp.BusinessObjects
 			var serializer = new Polenter.Serialization.SharpSerializer(false);
 
 			// deserialize
-			p = (Person)serializer.Deserialize("Person.SharpSerializer.xml");
+			p = (Person)serializer.Deserialize(Path.Combine(path_root, "Person.SharpSerializer.xml"));
 
 			return p;
 		}

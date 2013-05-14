@@ -17,37 +17,10 @@ namespace HelloWorldApp
 		{
 			InitializeComponent();
 
-			string filename = "";
-			switch (name)
-			{
-				case "Binary Formatter":
-					filename = "Person.bin";
-					break;
-				case "XmlSerializer":
-					filename = "Person.xml";
-					break;
-				case "SharpSerializer Binary":
-					filename = "Person.SharpSerializer.bin";
-					break;
-				case "SharpSerializer Xml":
-					filename = "Person.SharpSerializer.xml";
-					break;
-				default:
-					return;
-				//break;
-			}
-
-
-			byte[] bytes = null;
-			if ("" != filename)
-			{
-				bytes = ControllerPersonOperations.Read(filename);
-			}
-
-			string content = System.Text.Encoding.UTF8.GetString(bytes);
-			textBoxContent.Text = content;
+			textBoxContent.Text = ControllerPersonOperations.LoadFileTextual(name);
 
 			return;
 		}
+
 	}
 }

@@ -71,5 +71,51 @@ namespace HelloWorldApp.BusinessObjects
 
 			return p;
 		}
+
+
+
+
+		public static string LoadFileTextual(string name)
+		{
+			string filename = "";
+			switch (name)
+			{
+				case "Binary Formatter":
+					filename = Path.Combine(path_root,"Person.bin");
+					break;
+				case "XmlSerializer":
+					filename = Path.Combine(path_root,"Person.xml");
+					break;
+				case "SharpSerializer Binary":
+					filename = Path.Combine(path_root,"Person.SharpSerializer.bin");
+					break;
+				case "SharpSerializer Xml":
+					filename = Path.Combine(path_root,"Person.SharpSerializer.xml");
+					break;
+				default:
+					return "Something is wrong!!";
+				//break;
+			}
+
+			string content = "N/A";
+			try
+			{
+				byte[] bytes = null;
+				if ("" != filename)
+				{
+					bytes = ControllerPersonOperations.Read(filename);
+				}
+
+				content = System.Text.Encoding.UTF8.GetString(bytes);
+			}
+			catch (System.Exception exc)
+			{
+				content = exc.Message;
+			}
+
+			return content;
+		}
+	
+	
 	}
 }
