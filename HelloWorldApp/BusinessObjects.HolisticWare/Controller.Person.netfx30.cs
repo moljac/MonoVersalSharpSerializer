@@ -9,6 +9,10 @@ namespace HelloWorldApp.BusinessObjects
 {
 	public partial class ControllerPersonOperations
 	{
+		static string path_root = 
+			Environment.GetFolderPath(Environment.SpecialFolder.Personal)
+			// "" // application folder or bundle, package, XAP, ipa, apk
+			;
 
 		public static void SerializeBinaryFormatter(Person p)
 		{
@@ -17,7 +21,7 @@ namespace HelloWorldApp.BusinessObjects
 				var ser = new System.Runtime.Serialization.Formatters.Binary.BinaryFormatter();
 				ser.Serialize(ms, p);
 
-				Write(ms, "Person.bin");
+				Write(ms, Path.Combine(path_root, "Person.bin"));
 			}
 
 			return;
@@ -31,7 +35,7 @@ namespace HelloWorldApp.BusinessObjects
 				var ser = new System.Xml.Serialization.XmlSerializer(typeof(Person));
 				ser.Serialize(ms, p);
 
-				Write(ms, "Person.xml");
+				Write(ms, Path.Combine(path_root, "Person.xml"));
 			}
 
 			return;
@@ -42,7 +46,7 @@ namespace HelloWorldApp.BusinessObjects
 		{
 			Person p = default(Person);
 
-			byte[] bytes = Read("Person.bin");
+			byte[] bytes = Read(Path.Combine(path_root, "Person.bin"));
 
 			using (var ms = new MemoryStream(bytes))
 			{
@@ -57,7 +61,7 @@ namespace HelloWorldApp.BusinessObjects
 		{
 			Person p = default(Person);
 
-			byte[] bytes = Read("Person.xml");
+			byte[] bytes = Read(Path.Combine(path_root, "Person.xml"));
 
 			using (var ms = new MemoryStream(bytes))
 			{

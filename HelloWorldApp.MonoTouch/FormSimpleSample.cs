@@ -102,19 +102,17 @@ namespace HelloWorldApp
 
 
 
-
 		# region    Platform dependant code (port needed)
 		//-------------------------------------------------------------------------
 		Person person = null;
 		//-------------------------------------------------------------------------
 		private void buttonOpen_Click(object sender, EventArgs e)
 		{
+			string name = comboBoxFormats.Text;
+			FormContentPresenter fcp = new FormContentPresenter(name);
+			this.NavigationController.PresentViewController (fcp, true, null);
 
-				string name = comboBoxFormats.Text;
-				FormContentPresenter fcp = new FormContentPresenter(name);
-				this.NavigationController.PresentViewController (fcp, true, null);
-
-				//fcp.Push();
+			//fcp.Push();
 			System.Diagnostics.Debug.WriteLine ("BUTTON OPEN CLICKED!");
 
 			return;
