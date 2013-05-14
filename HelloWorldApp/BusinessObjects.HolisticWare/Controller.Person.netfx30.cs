@@ -93,7 +93,7 @@ namespace HelloWorldApp.BusinessObjects
 					filename = Path.Combine(path_root,"Person.SharpSerializer.xml");
 					break;
 				default:
-					return "Something is wrong!!";
+					return "Please choose serialization/deserialization type!!";
 				//break;
 			}
 
