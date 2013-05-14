@@ -45,7 +45,7 @@
 					<TextBlock Width="120">Age</TextBlock>
 					<TextBox x:Name="textBoxAge"></TextBox>
 				</StackPanel>
-				<Button x:Name="buttonLoad" Content="Load">
+				<Button x:Name="buttonLoad" Content="Load" Click="buttonLoad_Click">
 				</Button>
 				<Button  x:Name="buttonSave" Content="Save">
 				</Button>

@@ -133,6 +133,8 @@ namespace HelloWorldApp
 
 		# region    Platform dependant code (port needed)
 		//-------------------------------------------------------------------------
+		Person person = null;
+		//-------------------------------------------------------------------------
 		private void buttonOpen_Click(object sender, EventArgs e)
 		{
 			if (null != comboBoxFormats.SelectedItem)
@@ -160,11 +162,10 @@ namespace HelloWorldApp
 		private Person UIToObject()
 		{
 			object o = comboBoxFormats.SelectedItem;
-			Person p = default(Person);
 
 			if (null == o)
 			{
-				return p;
+				return person;
 			}
 			else
 			{
@@ -173,7 +174,7 @@ namespace HelloWorldApp
 				DateTime dob = DateTime.Now;
 				DateTime.TryParse(this.dateTimePicker1.Text, out dob);
 
-				p = new Person()
+				person = new Person()
 				{
 				  NameFirst = this.textBoxNameFirst.Text
 				, NameLast = this.textBoxNameLast.Text
@@ -183,40 +184,34 @@ namespace HelloWorldApp
 				switch (name)
 				{
 					case "Binary Formatter":
-						ControllerPersonOperations.SerializeBinaryFormatter(p);
+						ControllerPersonOperations.SerializeBinaryFormatter(person);
 						break;
 					case "XmlSerializer":
-						ControllerPersonOperations.SerializeXmlSerializer(p);
+						ControllerPersonOperations.SerializeXmlSerializer(person);
 						break;
 					case "SharpSerializer Binary":
-						ControllerPersonOperations.SerializeSharpSerializerBinary(p);
+						ControllerPersonOperations.SerializeSharpSerializerBinary(person);
 						break;
 					case "SharpSerializer Xml":
-						ControllerPersonOperations.SerializeSharpSerializerXml(p);
+						ControllerPersonOperations.SerializeSharpSerializerXml(person);
 						break;
 					default:
 						break;
 				}
 			}
 
-			return p;
+			return person;
 		}
 
 		//-------------------------------------------------------------------------
 		private void UIFromObject()
 		{
-			Person p = default(Person);
-
 			// difficult to port (iOS especially)
 			object o = comboBoxFormats.SelectedItem;
 
 			if (null == o)
 			{
-				this.textBoxNameFirst.Text = "";
-				this.textBoxNameLast.Text = "";
-				this.textBoxAge.Text = "????";
-				this.dateTimePicker1.Text = DateTime.Today.ToString();
-
+				UIReset();
 				return;
 			}
 			else
@@ -226,16 +221,16 @@ namespace HelloWorldApp
 				switch (name)
 				{
 					case "Binary Formatter":
-						p = ControllerPersonOperations.DeserializeBinaryFormatter();
+						person = ControllerPersonOperations.DeserializeBinaryFormatter();
 						break;
 					case "XmlSerializer":
-						p = ControllerPersonOperations.DeserializeXmlSerializer();
+						person = ControllerPersonOperations.DeserializeXmlSerializer();
 						break;
 					case "SharpSerializer Binary":
-						p = ControllerPersonOperations.DeserializeSharpSerializerBinary();
+						person = ControllerPersonOperations.DeserializeSharpSerializerBinary();
 						break;
 					case "SharpSerializer Xml":
-						p = ControllerPersonOperations.DeserializeSharpSerializerXml();
+						person = ControllerPersonOperations.DeserializeSharpSerializerXml();
 						break;
 					default:
 						return;
@@ -243,20 +238,34 @@ namespace HelloWorldApp
 				}
 			}
 
-			if (null == p)
+			if (null == person)
 			{
-				this.textBoxNameFirst.Text = "";
-				this.textBoxNameLast.Text = "";
-				this.textBoxAge.Text = "????";
-				this.dateTimePicker1.Text = DateTime.Today.ToString();
+				UIReset();
 			}
 			else
 			{
-				this.textBoxNameFirst.Text = p.NameFirst;
-				this.textBoxNameLast.Text = p.NameLast;
-				this.textBoxAge.Text = p.Age.ToString();
-				this.dateTimePicker1.Text = p.DateOfBirth.ToString();
+				UISet(person);
 			}
+
+			return;
+		}
+		//-------------------------------------------------------------------------
+		private void UISet(Person p)
+		{
+			this.textBoxNameFirst.Text = person.NameFirst;
+			this.textBoxNameLast.Text = person.NameLast;
+			this.textBoxAge.Text = person.Age.ToString();
+			this.dateTimePicker1.Text = person.DateOfBirth.ToString();
+
+			return;
+		}
+		//-------------------------------------------------------------------------
+		private void UIReset()
+		{
+			this.textBoxNameFirst.Text = "";
+			this.textBoxNameLast.Text = "";
+			this.textBoxAge.Text = "????";
+			this.dateTimePicker1.Text = DateTime.Today.ToString();
 
 			return;
 		}

@@ -16,7 +16,7 @@ namespace HelloWorldApp.BusinessObjects
 		/// <summary>
 		/// 
 		/// </summary>
-		/// <param name="p"></param>
+		/// <param name="person"></param>
 		public static void SerializeSharpSerializerBinary(Person p)
 		{
 			// create instance of sharpSerializer
@@ -32,7 +32,7 @@ namespace HelloWorldApp.BusinessObjects
 		/// <summary>
 		/// 
 		/// </summary>
-		/// <param name="p"></param>
+		/// <param name="person"></param>
 		public static void SerializeSharpSerializerXml(Person p)
 		{
 			// create instance of sharpSerializer

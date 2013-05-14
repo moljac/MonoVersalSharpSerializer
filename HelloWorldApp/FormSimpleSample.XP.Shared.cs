@@ -26,8 +26,8 @@ namespace HelloWorldApp
 
 		private void buttonClear_Click(object sender, EventArgs e)
 		{
-  			UIFromObject();
-            
+			UIReset();
+			
 			return;
 		}
 	}

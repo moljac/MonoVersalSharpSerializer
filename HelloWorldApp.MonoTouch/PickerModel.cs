@@ -5,15 +5,15 @@ using System.Collections.Generic;
 namespace HelloWorldApp
 {
 	public class PickerModel : UIPickerViewModel
-		
 	{
-		
-		
 		public event EventHandler<PickerChangedEventArgs> PickerChanged;
 		
 		List<string> column1 = new List<string>()
 		{				
-			"Binary Formatter", "XML Serializer","SharpSerializer Binary", "SharpSerializer XML"
+		  "Binary Formatter"
+		, "XmlSerializer"				// was XML Serializer
+		, "SharpSerializer Binary"		// 
+		, "SharpSerializer Xml"			// was SharpSerializer XML
 		};
 
 		
@@ -29,9 +29,7 @@ namespace HelloWorldApp
 		
 		public override int GetComponentCount(UIPickerView uipv)
 		{
-			
-			return(1);
-			
+			return(1);	
 		}
 		
 		public override int GetRowsInComponent (UIPickerView uipv, int component)
@@ -43,25 +41,19 @@ namespace HelloWorldApp
 		
 		public override string GetTitle(UIPickerView uipv, int row, int component)
 		{
-			
 			//each component would get its own title.			
-			return columns[component][row];
-			
+			return columns[component][row];		
 		}
 
 		
 		public override float GetComponentWidth(UIPickerView uipv, int comp)
 		{
-			
 			return(400f);
-			
 		}
 		
 		public override float GetRowHeight(UIPickerView uipv, int comp)
 		{
-			
 			return(40f); 
-			
 		}
 		
 		public class PickerChangedEventArgs : EventArgs
