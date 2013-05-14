@@ -37,9 +37,14 @@ namespace HelloWorldApp
 			FormatChooser();
 
 			// BUTTONS ACTION
+            buttonSave.TouchUpInside += buttonSave_Click;
+            buttonLoad.TouchUpInside += buttonLoad_Click;
 			buttonOpen.TouchUpInside += buttonOpen_Click;
 			buttonClear.TouchUpInside += buttonClear_Click;
 
+            UIReset();
+            
+            return;
 		}
 
 		void DateChooser ()
