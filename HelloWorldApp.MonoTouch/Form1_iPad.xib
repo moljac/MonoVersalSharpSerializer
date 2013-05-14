@@ -75,10 +75,10 @@
 					<object class="IBUIButton" id="914306121">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{20, 525}, {728, 44}}</string>
+						<string key="NSFrame">{{20, 526}, {728, 44}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
+						<reference key="NSNextKeyView" ref="799246872"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -131,7 +131,7 @@
 						<int key="IBUIContentMode">7</int>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<string key="IBUIText">Label</string>
+						<string key="IBUIText">All types are serialized to string lists, which are stored in the file header. Duplicates are removed. Serialized objects only reference these types. It reduces size especially if serializing collections. Refer to SizeOptimizedBinaryWriter for more details.</string>
 						<object class="NSColor" key="IBUITextColor" id="235780979">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MCAwIDAAA</bytes>
@@ -139,16 +139,41 @@
 						</object>
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">0</int>
-						<object class="IBUIFontDescription" key="IBUIFontDescription" id="207427734">
+						<int key="IBUINumberOfLines">0</int>
+						<object class="IBUIFontDescription" key="IBUIFontDescription" id="877598127">
 							<int key="type">1</int>
-							<double key="pointSize">17</double>
+							<double key="pointSize">21</double>
 						</object>
-						<object class="NSFont" key="IBUIFont" id="512903397">
+						<object class="NSFont" key="IBUIFont" id="842281861">
 							<string key="NSName">Helvetica</string>
-							<double key="NSSize">17</double>
+							<double key="NSSize">21</double>
 							<int key="NSfFlags">16</int>
 						</object>
 						<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
+						<double key="preferredMaxLayoutWidth">728</double>
+					</object>
+					<object class="IBUILabel" id="541015175">
+						<reference key="NSNextResponder" ref="766721923"/>
+						<int key="NSvFlags">292</int>
+						<string key="NSFrame">{{20, 349}, {728, 169}}</string>
+						<reference key="NSSuperview" ref="766721923"/>
+						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView" ref="914306121"/>
+						<string key="NSReuseIdentifierKey">_NS:9</string>
+						<bool key="IBUIOpaque">NO</bool>
+						<bool key="IBUIClipsSubviews">YES</bool>
+						<int key="IBUIContentMode">7</int>
+						<bool key="IBUIUserInteractionEnabled">NO</bool>
+						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+						<string key="IBUIText">All types are serialized as parts of their objects, non regarding if there are duplicate types in the file defined. It reduces the overhead if storing single items, but increases the file size if storing collections. See BurtsBinaryWriter for details.</string>
+						<reference key="IBUITextColor" ref="235780979"/>
+						<nil key="IBUIHighlightedColor"/>
+						<int key="IBUIBaselineAdjustment">0</int>
+						<int key="IBUINumberOfLines">0</int>
+						<reference key="IBUIFontDescription" ref="877598127"/>
+						<reference key="IBUIFont" ref="842281861"/>
+						<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
+						<double key="preferredMaxLayoutWidth">728</double>
 					</object>
 					<object class="IBUIButton" id="808595663">
 						<reference key="NSNextResponder" ref="766721923"/>
@@ -156,7 +181,7 @@
 						<string key="NSFrame">{{20, 298}, {728, 44}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="784529515"/>
+						<reference key="NSNextKeyView" ref="541015175"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -173,26 +198,27 @@
 						<reference key="IBUIFontDescription" ref="76349488"/>
 						<reference key="IBUIFont" ref="509696255"/>
 					</object>
-					<object class="IBUILabel" id="784529515">
+					<object class="IBUIButton" id="799246872">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{20, 348}, {728, 169}}</string>
+						<string key="NSFrame">{{20, 896}, {193, 44}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="914306121"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
-						<bool key="IBUIClipsSubviews">YES</bool>
-						<int key="IBUIContentMode">7</int>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<string key="IBUIText">Label</string>
-						<reference key="IBUITextColor" ref="235780979"/>
-						<nil key="IBUIHighlightedColor"/>
-						<int key="IBUIBaselineAdjustment">0</int>
-						<reference key="IBUIFontDescription" ref="207427734"/>
-						<reference key="IBUIFont" ref="512903397"/>
-						<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
+						<int key="IBUIContentHorizontalAlignment">0</int>
+						<int key="IBUIContentVerticalAlignment">0</int>
+						<string key="IBUINormalTitle">www.sharpserializer.com</string>
+						<reference key="IBUIHighlightedTitleColor" ref="219074897"/>
+						<object class="NSColor" key="IBUINormalTitleColor">
+							<int key="NSColorSpace">1</int>
+							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
+						</object>
+						<reference key="IBUINormalTitleShadowColor" ref="12690812"/>
+						<reference key="IBUIFontDescription" ref="76349488"/>
+						<reference key="IBUIFont" ref="509696255"/>
 					</object>
 				</array>
 				<string key="NSFrame">{{0, 64}, {768, 960}}</string>
@@ -268,11 +294,11 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">label2</string>
+						<string key="label">linkLabel1</string>
 						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="784529515"/>
+						<reference key="destination" ref="799246872"/>
 					</object>
-					<int key="connectionID">16</int>
+					<int key="connectionID">19</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -302,8 +328,9 @@
 							<reference ref="520881081"/>
 							<reference ref="196885103"/>
 							<reference ref="808595663"/>
-							<reference ref="784529515"/>
+							<reference ref="541015175"/>
 							<reference ref="914306121"/>
+							<reference ref="799246872"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -328,13 +355,18 @@
 						<reference key="parent" ref="766721923"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">9</int>
-						<reference key="object" ref="784529515"/>
+						<int key="objectID">10</int>
+						<reference key="object" ref="914306121"/>
 						<reference key="parent" ref="766721923"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">10</int>
-						<reference key="object" ref="914306121"/>
+						<int key="objectID">17</int>
+						<reference key="object" ref="541015175"/>
+						<reference key="parent" ref="766721923"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">18</int>
+						<reference key="object" ref="799246872"/>
 						<reference key="parent" ref="766721923"/>
 					</object>
 				</array>
@@ -345,18 +377,19 @@
 				<string key="-2.CustomClassName">UIResponder</string>
 				<string key="-2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="10.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="17.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="18.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="4.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="6.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="7.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="8.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="9.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 			</dictionary>
 			<dictionary class="NSMutableDictionary" key="unlocalizedProperties"/>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">16</int>
+			<int key="maxID">19</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -367,6 +400,7 @@
 						<string key="buttonForm2">UIButton</string>
 						<string key="label1">UILabel</string>
 						<string key="label2">UILabel</string>
+						<string key="linkLabel1">UIButton</string>
 						<string key="serializeBurstBinary">UIButton</string>
 						<string key="serializeSizeOptimizedBinary">UIButton</string>
 						<string key="serializeXmlButton">UIButton</string>
@@ -383,6 +417,10 @@
 						<object class="IBToOneOutletInfo" key="label2">
 							<string key="name">label2</string>
 							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="linkLabel1">
+							<string key="name">linkLabel1</string>
+							<string key="candidateClassName">UIButton</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="serializeBurstBinary">
 							<string key="name">serializeBurstBinary</string>

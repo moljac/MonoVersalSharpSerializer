@@ -36,7 +36,9 @@ namespace HelloWorldApp
 			DateChooser();
 			FormatChooser();
 
+			// BUTTONS ACTION
 			buttonOpen.TouchUpInside += buttonOpen_Click;
+			buttonClear.TouchUpInside += buttonClear_Click;
 
 		}
 

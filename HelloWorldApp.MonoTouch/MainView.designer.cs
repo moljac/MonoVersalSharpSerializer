@@ -28,6 +28,9 @@ namespace HelloWorldApp
 
 		[Outlet]
 		MonoTouch.UIKit.UILabel label2 { get; set; }
+
+		[Outlet]
+		MonoTouch.UIKit.UIButton linkLabel1 { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
@@ -59,6 +62,11 @@ namespace HelloWorldApp
 			if (label2 != null) {
 				label2.Dispose ();
 				label2 = null;
+			}
+
+			if (linkLabel1 != null) {
+				linkLabel1.Dispose ();
+				linkLabel1 = null;
 			}
 		}
 	}

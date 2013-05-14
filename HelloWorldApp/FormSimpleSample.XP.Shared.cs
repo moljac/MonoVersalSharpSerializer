@@ -28,6 +28,12 @@ namespace HelloWorldApp
 		{
 			UIFromObject();
 
+			textBoxNameFirst.Text = String.Empty; 
+			textBoxNameLast.Text = String.Empty;
+			textBoxAge.Text = String.Empty;
+			dateTimePicker1.Text = String.Empty;
+			comboBoxFormats.Text = String.Empty;
+
 			return;
 		}
 	}

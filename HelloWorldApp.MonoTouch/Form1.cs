@@ -40,9 +40,17 @@ namespace HelloWorldApp
 			base.ViewDidLoad ();
 			
 			// Perform any additional setup after loading the view, typically from a nib.
+
+			//BUTTONS ACTION
 			buttonForm2.TouchUpInside += new EventHandler(buttonForm2_TouchUpInside);
+			linkLabel1.TouchUpInside += linkLabel1_LinkClicked;
 
 			return;
+		}
+
+		void linkLabel1_LinkClicked (object sender, EventArgs e)
+		{
+			UIApplication.SharedApplication.OpenUrl (new NSUrl("http://www.sharpserializer.com"));
 		}
 
 		void buttonForm2_TouchUpInside(object sender, EventArgs e)
