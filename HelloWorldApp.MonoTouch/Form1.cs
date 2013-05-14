@@ -44,6 +44,10 @@ namespace HelloWorldApp
 			//BUTTONS ACTION
 			buttonForm2.TouchUpInside += new EventHandler(buttonForm2_TouchUpInside);
 			linkLabel1.TouchUpInside += linkLabel1_LinkClicked;
+            
+            serializeXmlButton.TouchUpInside += serializeXmlButton_Click;
+            serializeBurstBinary.TouchUpInside += serializeBurstBinary_Click;
+            serializeSizeOptimizedBinary.TouchUpInside += serializeSizeOptimizedBinary_Click;
 
 			return;
 		}
