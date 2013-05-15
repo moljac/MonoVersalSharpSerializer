@@ -62,6 +62,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessObjects.HolisticWare\FileSystemRootRelative.cs" />
     <Compile Include="BusinessObjects\AdvancedStruct.cs" />
     <Compile Include="BusinessObjects.HolisticWare\Controller.Person.netfx30.cs" />
     <Compile Include="BusinessObjects\ComplexObject.cs" />

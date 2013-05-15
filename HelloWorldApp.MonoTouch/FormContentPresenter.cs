@@ -39,7 +39,11 @@ namespace HelloWorldApp
 			// Perform any additional setup after loading the view, typically from a nib.
 			
 			//Navigation Bar TITLE
-			contentTitle.Title = name;
+			contentTitle.Title =
+				"path = " +	NSBundle.MainBundle.BundlePath
+				+ Environment.NewLine +
+				name
+				;
 
 			//TEXT BOX - textBoxContent
 			//	textBoxContent

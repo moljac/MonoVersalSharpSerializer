@@ -108,9 +108,16 @@ namespace HelloWorldApp
 			UpdateDisplay();
 		}
 
+		string name = null;
+
 		void NavigateToFormContentPresenter(object sender, EventArgs e)
 		{
-			StartActivity(typeof(FormContentPersenter));
+			var content_presenter = new Intent(this, typeof(FormContentPersenter));
+			content_presenter.PutExtra("name", name);
+
+			StartActivity(content_presenter);
+
+			return;
 		}
 
 		protected override Dialog OnCreateDialog(int id)
@@ -139,7 +146,7 @@ namespace HelloWorldApp
 		{
 			if (null != comboBoxFormats.SelectedItem)
 			{
-				string name = comboBoxFormats.SelectedItem.ToString();
+				name = comboBoxFormats.SelectedItem.ToString();
 				//FormContentPersenter fcp = new FormContentPersenter(name);
 				//fcp.Show();
 				NavigateToFormContentPresenter(sender, e);
