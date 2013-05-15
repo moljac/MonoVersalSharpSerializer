@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+        android:text="Name First"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:layout_marginTop="20dp" />
+    <EditText
+        android:inputType="textPersonName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textView1"
+        android:id="@+id/textBoxNameFirst"
+        android:layout_alignBaseline="@id/textView1"
+        android:singleLine="true"
+        android:hint="First Name" />
+    <TextView
+        android:text="Name Last"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:id="@+id/textView2"
+        android:layout_marginTop="10dp" />
+    <EditText
+        android:inputType="textPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textView2"
+        android:id="@+id/textBoxNameLast"
+        android:layout_alignBaseline="@id/textView2"
+        android:singleLine="true"
+        android:hint="Last Name" />
+    <TextView
+        android:text="Date Of Birth"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:id="@+id/textView3"
+        android:layout_marginTop="10dp" />
+    <EditText
+        android:inputType="date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textView3"
+        android:id="@+id/dateTimePicker1"
+        android:layout_alignBaseline="@id/textView3"
+        android:singleLine="true"
+        android:hint="Tap To Choose ..." />
+    <TextView
+        android:text="Age"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3"
+        android:id="@+id/textView4"
+        android:layout_marginTop="10dp" />
+    <EditText
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textView3"
+        android:id="@+id/textBoxAge"
+        android:layout_alignBaseline="@id/textView4"
+        android:singleLine="true"
+        android:text="-1" />
+    <TextView
+        android:text="Type"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView4"
+        android:id="@+id/textView5"
+        android:layout_marginTop="10dp" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textView3"
+        android:id="@+id/comboBoxFormats"
+        android:layout_alignBaseline="@id/textView5" />
+    <Button
+        android:text="Load"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView5"
+        android:id="@+id/buttonLoad"
+        android:layout_marginTop="30dp" />
+    <Button
+        android:text="Save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonLoad"
+        android:id="@+id/buttonSave"
+        android:layout_marginTop="10dp" />
+    <Button
+        android:text="Open"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonSave"
+        android:id="@+id/buttonOpen"
+        android:layout_marginTop="10dp" />
+    <Button
+        android:text="Clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonOpen"
+        android:id="@+id/buttonClear"
+        android:layout_marginTop="10dp" />
+</RelativeLayout>
