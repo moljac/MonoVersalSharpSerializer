@@ -91,7 +91,10 @@ namespace HelloWorldApp
 		//		WF messages 
 		//		Android Alerts
 		//		iOS ???
-		private void ShowMessageAlert(object sender, EventArgs e)
+
+		//IKI: modified
+		//private void ShowMessageAlert(object sender, EventArgs e)
+		private void ShowMessageAlert()
 		{
 			UIAlertView uia = new UIAlertView
 								(

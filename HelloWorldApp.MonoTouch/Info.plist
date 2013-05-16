@@ -21,8 +21,14 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>MinimumOSVersion</key>
-	<string>3.2</string>
+	<string>4.0</string>
 	<key>UIFileSharingEnabled</key>
 	<true/>
+	<key>CFBundleIdentifier</key>
+	<string>com.holisticware.sharpserializer</string>
+	<key>CFBundleDisplayName</key>
+	<string>SharpSerializer</string>
+	<key>CFBundleVersion</key>
+	<string>1.0b</string>
 </dict>
 </plist>
