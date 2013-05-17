@@ -70,7 +70,21 @@ namespace HelloWorldApp
 		//		iOS ???
 		private void ShowMessageAlert(object sender, EventArgs e)
 		{
-			Toast.MakeText(this, SerializationMessage, ToastLength.Long);
+			// Java.Lang.NullPointerException: 
+			// Toast.MakeText(this, SerializationMessage, ToastLength.Long);
+			// Toast.MakeText(this, SerializationMessage, ToastLength.Long).Show();
+			// Toast.MakeText(ApplicationContext, SerializationMessage, ToastLength.Long).Show();
+
+			// Context context = ApplicationContext;
+			// Antext = new CharSequence SerializationMessage;
+			// int duration = Toast.LENGTH_SHORT;
+			// 
+			// Toast toast = Toast.makeText(context, text, duration);
+			// toast.show(); 
+
+			//Toast.MakeText(this, SerializationMessage.ToString(), ToastLength.Short).Show();
+
+			Toast.MakeText(this, "Ops", ToastLength.Short).Show();
 
 			return;
 		}
