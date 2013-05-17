@@ -1,12 +1,15 @@
-﻿<Properties MonoDevelop.MonoMac.LastXamMacNagTime="05/17/2013 06:28:43">
+﻿<Properties MonoDevelop.MonoMac.LastXamMacNagTime="05/17/2013 07:50:43">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="HelloWorldApp/Form1.XP.Shared.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HelloWorldApp.MonoForAndroid/Form1.cs">
     <Files>
       <File FileName="HelloWorldApp/Form1.XP.Shared.cs" Line="110" Column="4" />
+      <File FileName="HelloWorldApp.MonoForAndroid/Form1.cs" Line="73" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/mc/Desktop/src/libraries-moljac/git[github.com]/MonoVersalSharpSerializer/HelloWorldApp.MonoForAndroid/Form1.cs" line="73" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.HelloWorldApp.MonoForAndroid AndroidDeviceId-Debug="emulator-5554" />
