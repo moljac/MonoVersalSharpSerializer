@@ -1,8 +1,8 @@
-﻿<Properties MonoDevelop.MonoMac.LastXamMacNagTime="05/14/2013 09:43:06">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone.5.0" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="HelloWorldApp.MonoTouch/FormSimpleSample.cs">
+﻿<Properties MonoDevelop.MonoMac.LastXamMacNagTime="05/17/2013 06:28:43">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="HelloWorldApp/Form1.XP.Shared.cs">
     <Files>
-      <File FileName="HelloWorldApp.MonoTouch/FormSimpleSample.cs" Line="188" Column="1" />
+      <File FileName="HelloWorldApp/Form1.XP.Shared.cs" Line="110" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
