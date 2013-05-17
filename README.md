@@ -1,7 +1,34 @@
 MonoVersalSharpSerializer
 =========================
 
-SharpSerializer ports to MonoForAndroid, MonoTouch, WindowsPhone
+SharpSerializer ports to 
+
+*	MonoForAndroid, 
+*	MonoTouch, 
+*	WindowsPhone (work in progress)
+*	MonoMac (work in progress)
+
+
+Executables (applications) are direct port of the Windows Forms application which
+is part of original SharpSerializer package (three buttons for test and message box)
+
+
+## Known issues ##
+
+2013-05 
+
+If working with stable versions of Xamarin.iOS and Xamarin.Android Alert message
+states that files differ. Stable version is based on Mono 2.10.x and HolisticWare team
+reported a bug. 
+
+For those on alpha channels of Xamarin Studio and Xamarin.iOS and Xamarin.Android which
+are based on Mono 3.x - there is no error in serialization. So, alerts will return
+the size of the file[s].
+
+[https://bugzilla.xamarin.com/show_bug.cgi?id=11822](https://bugzilla.xamarin.com/show_bug.cgi?id=11822)
+
+It seems that there is issue with serialization of '\t' character.
+
 
 ## Original ##
 
