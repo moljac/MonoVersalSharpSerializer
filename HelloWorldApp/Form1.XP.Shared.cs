@@ -107,7 +107,7 @@ namespace HelloWorldApp
 			SerializationMessage = serialize(obj, serializer, filename);
 
 			//IKI: iOS UIAlertView
-			ShowMessageAlert ();
+			ShowMessageAlert (this, null);
 			
 
 			return;
@@ -141,7 +141,9 @@ namespace HelloWorldApp
 			serialize(obj, serializer, filename);
 
 			//IKI: iOS UIAlertView
-			ShowMessageAlert ();
+			ShowMessageAlert(this, null);
+
+			return;
 		}
 
 		public void serializeBurstBinary_Click(object sender, EventArgs e)
@@ -171,7 +173,9 @@ namespace HelloWorldApp
 			serialize(obj, serializer, filename);
 
 			//IKI: iOS UIAlertView
-			ShowMessageAlert ();
+			ShowMessageAlert(this, null);
+
+			return;
 		}
 
 	}
