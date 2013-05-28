@@ -650,7 +650,7 @@ Global
 		{9D959723-3619-4EB5-9404-3A10E2957487} = {BBCBEC64-EB8E-403B-845F-74E4FFC25250}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = HelloWorldApp.MonoForAndroid\HelloWorldApp.MonoForAndroid.csproj
+		StartupItem = HelloWorldApp.MonoTouch\HelloWorldApp.MonoTouch.Universal.csproj
 	EndGlobalSection
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = SharpSerializer.vsmdi
