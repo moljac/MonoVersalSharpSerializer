@@ -43,6 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\HelloWorldApp.Console\Form1.cs">
+      <Link>Form1.cs</Link>
+    </Compile>
     <Compile Include="..\HelloWorldApp\BusinessObjects.HolisticWare\Controller.Person.netfx30.cs">
       <Link>BusinessObjects.HolisticWare\Controller.Person.netfx30.cs</Link>
     </Compile>
