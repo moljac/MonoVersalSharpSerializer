@@ -76,6 +76,9 @@
     <CodesignProvision>Automatic:AppStore</CodesignProvision>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="SharpSerializer.iOS">
+      <HintPath>..\..\bin\SharpSerializer.iOS.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -126,11 +129,5 @@
     <InterfaceDefinition Include="FormSimpleSample_iPhone.xib" />
     <InterfaceDefinition Include="FormContentPresenter_iPhone.xib" />
     <InterfaceDefinition Include="FormContentPresenter_iPad.xib" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\..\SharpSerializer.Library.MonoTouch\SharpSerializer.Library.MonoTouch.csproj">
-      <Project>{A5FD15FE-E8B3-45FF-85FE-599B56E1CAF0}</Project>
-      <Name>SharpSerializer.Library.MonoTouch</Name>
-    </ProjectReference>
   </ItemGroup>
 </Project>

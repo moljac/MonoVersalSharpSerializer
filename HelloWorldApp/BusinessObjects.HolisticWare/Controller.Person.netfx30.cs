@@ -48,6 +48,11 @@ namespace HelloWorldApp.BusinessObjects
 
 			byte[] bytes = Read(Path.Combine(path_root, "Person.bin"));
 
+			if (null == bytes)
+			{
+				return default(Person);
+			}
+
 			using (var ms = new MemoryStream(bytes))
 			{
 				var ser = new System.Runtime.Serialization.Formatters.Binary.BinaryFormatter();

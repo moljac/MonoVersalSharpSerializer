@@ -13,15 +13,23 @@ namespace HelloWorldApp.BusinessObjects
 
 		public static byte[] Read(string filename)
 		{
-			MemoryStream ms = new MemoryStream();
+			string path_combined = Path.Combine(ControllerPersonOperations.StorageRoot, filename);
+
+			if (!File.Exists(path_combined))
+			{
+				return null;
+			}
+
 			FileStream file = new FileStream
 									(
-									  Path.Combine(ControllerPersonOperations.StorageRoot, filename)
+									  path_combined
 									, FileMode.Open
 									, FileAccess.Read
 									);
 			byte[] bytes = new byte[file.Length];
 			file.Read(bytes, 0, (int)file.Length);
+
+			MemoryStream ms = new MemoryStream();
 			ms.Write(bytes, 0, (int)file.Length);
 			file.Close();
 			ms.Close();

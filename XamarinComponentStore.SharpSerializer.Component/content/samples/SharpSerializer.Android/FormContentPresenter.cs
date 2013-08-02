@@ -40,7 +40,7 @@ namespace HelloWorldApp
 			//TEXT BOX - textBoxContent
 			//	textBoxContent
 			textBoxContent.Text =
-				"path = " + "android path?!?!!"
+				"path_combined = " + "android path_combined?!?!!"
 				+ System.Environment.NewLine +
 				ControllerPersonOperations.LoadFileTextual(name)
 				;

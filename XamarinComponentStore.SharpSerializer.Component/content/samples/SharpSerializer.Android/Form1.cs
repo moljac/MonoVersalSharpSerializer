@@ -70,7 +70,58 @@ namespace HelloWorldApp
 		//		iOS ???
 		private void ShowMessageAlert(object sender, EventArgs e)
 		{
-			Toast.MakeText(this, SerializationMessage, ToastLength.Long);
+			bool show_toast = false;
+			bool show_alert = false;
+
+			string text = SerializationMessage.ToString();
+
+			# region    Toast
+			//-------------------------------------------------------------------------
+			// Java.Lang.NullPointerException: 
+			// Toast.MakeText(this, SerializationMessage, ToastLength.Long);
+			// Toast.MakeText(this, SerializationMessage, ToastLength.Long).Show();
+			// Toast.MakeText(ApplicationContext, SerializationMessage, ToastLength.Long).Show();
+
+			// Context context = ApplicationContext;
+			// Antext = new CharSequence SerializationMessage;
+			// int duration = Toast.LENGTH_SHORT;
+			// 
+
+			if (show_toast)
+			{
+				Toast toast = Toast.MakeText(this, text, ToastLength.Short);
+				toast.Show(); 
+			}
+			//-------------------------------------------------------------------------
+			# endregion Toast
+
+
+			# region    Alert
+			//-------------------------------------------------------------------------
+			if (show_alert)
+			{
+				AlertDialog.Builder builder = new AlertDialog.Builder(this);
+				builder.SetTitle("!! Alert !!");
+				builder.SetMessage(text);
+				builder.SetCancelable(false);
+
+				builder.SetPositiveButton
+					(
+					  "OK"
+					, delegate
+					{
+						//DO SOMEETHING
+					}
+					);
+
+				builder.Show();
+			}
+			//-------------------------------------------------------------------------
+			# endregion Alert
+	
+
+
+
 
 			return;
 		}

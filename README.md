@@ -15,6 +15,15 @@ is part of original SharpSerializer package (three buttons for test and message 
 
 ## Known issues ##
 
+2013-08-02
+
+Unloaded projects (so the whole solution is compile clean):
+
+* 	HelloWorld.MonoMac		
+	ms build task issue
+*	HelloWorld.WindowsPhone71
+	compilation to be fixed
+
 2013-05 
 
 If working with stable versions of Xamarin.iOS and Xamarin.Android Alert message
