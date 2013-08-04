@@ -43,8 +43,8 @@
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="SharpSerializer.Android">
-      <HintPath>..\..\bin\SharpSerializer.Android.dll</HintPath>
+    <Reference Include="SharpSerializer.Library.MonoForAndroid">
+      <HintPath>..\..\bin\SharpSerializer.Library.MonoForAndroid.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />

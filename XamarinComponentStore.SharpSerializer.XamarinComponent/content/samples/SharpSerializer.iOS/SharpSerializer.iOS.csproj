@@ -76,8 +76,8 @@
     <CodesignProvision>Automatic:AppStore</CodesignProvision>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="SharpSerializer.iOS">
-      <HintPath>..\..\bin\SharpSerializer.iOS.dll</HintPath>
+    <Reference Include="SharpSerializer.Library.MonoTouch">
+      <HintPath>..\..\bin\SharpSerializer.Library.MonoTouch.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
