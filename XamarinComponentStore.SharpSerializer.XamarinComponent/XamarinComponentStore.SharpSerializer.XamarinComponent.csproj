@@ -75,6 +75,16 @@
     <Content Include="content\samples\SharpSerializer.Android.sln" />
     <Content Include="content\samples\SharpSerializer.iOS.sln" />
     <Content Include="how-to.txt" />
+    <Content Include="screenshots\android-CropperCapture[42].png" />
+    <Content Include="screenshots\android-CropperCapture[43] %282%29.png" />
+    <Content Include="screenshots\android-CropperCapture[43] %283%29.png" />
+    <Content Include="screenshots\android-CropperCapture[43].png" />
+    <Content Include="screenshots\android-CropperCapture[44].png" />
+    <Content Include="screenshots\android-CropperCapture[45].png" />
+    <Content Include="screenshots\android-CropperCapture[46].png" />
+    <Content Include="screenshots\android-CropperCapture[47].png" />
+    <Content Include="screenshots\android-CropperCapture[48].png" />
+    <Content Include="screenshots\android-CropperCapture[49].png" />
     <Content Include="screenshots\iOS Simulator Screen shot May 17, 2013 8.41.01 AM.png" />
     <Content Include="screenshots\iOS Simulator Screen shot May 17, 2013 8.41.09 AM.png" />
     <Content Include="screenshots\iOS Simulator Screen shot May 17, 2013 8.41.45 AM.png" />
