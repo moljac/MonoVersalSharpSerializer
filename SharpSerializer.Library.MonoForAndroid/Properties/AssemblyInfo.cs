@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("HolisticwWare")]
-[assembly: AssemblyProduct("SharpSerializer.Library.MonoForAndroid")]
+[assembly: AssemblyProduct("SharpSerializer.Android")]
 [assembly: AssemblyCopyright("Copyright ©  2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

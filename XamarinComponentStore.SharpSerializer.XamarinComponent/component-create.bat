@@ -32,6 +32,7 @@ echo copying assemblies
 for %%A IN (%ASSEMBLIES%) DO (
 	echo -----------------------------------
 	echo %%A
+	dir %%A
 	set FILENAME=%%~nA
 	echo !FILENAME!
 

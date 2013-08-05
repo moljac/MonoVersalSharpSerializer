@@ -23,6 +23,11 @@ for %%p IN (%PROJECTS%) DO (
 	msbuild %%p ^
 			/p:Configuration=%CONFIGURATION% ^
 			/property:OutDir=.\bin\%CONFIGURATION%.msbuild\
+
+	msbuild %%p ^
+			/p:Configuration=%CONFIGURATION% ^
+			/property:OutDir=..\XamarinComponentStore.SharpSerializer.XamarinComponent\content\bin\
+			
 )
 :: =============================================================================================
 
