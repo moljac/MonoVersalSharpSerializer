@@ -6,11 +6,11 @@ using System.Resources;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("SharpSerializer.Library.WindowsPhone71")]
+[assembly: AssemblyTitle("SharpSerializer.WindowsPhone71")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("SharpSerializer.Library.WindowsPhone71")]
+[assembly: AssemblyCompany("HolisticwWare")]
+[assembly: AssemblyProduct("SharpSerializer.WindowsPhone71")]
 [assembly: AssemblyCopyright("Copyright ©  2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

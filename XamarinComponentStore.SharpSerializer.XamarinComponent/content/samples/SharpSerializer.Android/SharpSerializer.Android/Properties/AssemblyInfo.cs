@@ -8,7 +8,7 @@ using Android.App;
 [assembly: AssemblyTitle("HelloWorldApp.MonoForAndroid")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("HolisticwWare")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("")]
 [assembly: AssemblyCopyright("iki")]
 [assembly: AssemblyTrademark("")]
