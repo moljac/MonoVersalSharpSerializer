@@ -106,6 +106,10 @@ namespace HelloWorldApp
 			// serialize
 			SerializationMessage = serialize(obj, serializer, filename);
 
+			//IKI: iOS UIAlertView
+			ShowMessageAlert (this, null);
+			
+
 			return;
 		}
 
@@ -134,7 +138,12 @@ namespace HelloWorldApp
 			var filename = "sharpSerializerExample.sizeOptimized";
 
 			// serialize
-			serialize(obj, serializer, filename);
+			SerializationMessage = serialize(obj, serializer, filename);
+
+			//IKI: iOS UIAlertView
+			ShowMessageAlert(this, null);
+
+			return;
 		}
 
 		public void serializeBurstBinary_Click(object sender, EventArgs e)
@@ -161,7 +170,12 @@ namespace HelloWorldApp
 			var filename = "sharpSerializerExample.burst";
 
 			// serialize
-			serialize(obj, serializer, filename);
+			SerializationMessage = serialize(obj, serializer, filename);
+
+			//IKI: iOS UIAlertView
+			ShowMessageAlert(this, null);
+
+			return;
 		}
 
 	}

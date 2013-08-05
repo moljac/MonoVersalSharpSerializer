@@ -138,7 +138,7 @@ namespace HelloWorldApp
 			var filename = "sharpSerializerExample.sizeOptimized";
 
 			// serialize
-			serialize(obj, serializer, filename);
+			SerializationMessage = serialize(obj, serializer, filename);
 
 			//IKI: iOS UIAlertView
 			ShowMessageAlert(this, null);
@@ -170,7 +170,7 @@ namespace HelloWorldApp
 			var filename = "sharpSerializerExample.burst";
 
 			// serialize
-			serialize(obj, serializer, filename);
+			SerializationMessage = serialize(obj, serializer, filename);
 
 			//IKI: iOS UIAlertView
 			ShowMessageAlert(this, null);
