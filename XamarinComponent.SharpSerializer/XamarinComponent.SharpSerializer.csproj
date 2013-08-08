@@ -51,7 +51,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="bin.apps\xpkg\xpkg" />
+    <None Include="bin.apps\xpkg.old\xpkg" />
+    <None Include="bin.apps\xpkg.old\xpkg.zip" />
     <None Include="bin.apps\xpkg\xpkg.zip" />
     <None Include="component-create.bat" />
     <None Include="content\Details.md" />
@@ -63,17 +64,26 @@
     <None Include="compile.bat" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bin.apps\xpkg\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="bin.apps\xpkg.old\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="bin.apps\xpkg.old\mdoc.exe" />
+    <Content Include="bin.apps\xpkg.old\Mono.Cecil.dll" />
+    <Content Include="bin.apps\xpkg.old\monodoc.dll" />
+    <Content Include="bin.apps\xpkg.old\Newtonsoft.Json.dll" />
+    <Content Include="bin.apps\xpkg.old\xpkg.exe" />
     <Content Include="bin.apps\xpkg\mdoc.exe" />
-    <Content Include="bin.apps\xpkg\Mono.Cecil.dll" />
     <Content Include="bin.apps\xpkg\monodoc.dll" />
-    <Content Include="bin.apps\xpkg\Newtonsoft.Json.dll" />
-    <Content Include="bin.apps\xpkg\xpkg.exe" />
+    <Content Include="bin.apps\xpkg\xamarin-component.exe" />
     <Content Include="content\.gitignore" />
+    <Content Include="content\icons\HolisticWare.320x320.png" />
+    <Content Include="content\icons\HolisticWare.48x48.png" />
+    <Content Include="content\icons\hw-bckgrd=white.svg" />
+    <Content Include="content\icons\SharpSerializerLogo.png" />
+    <Content Include="content\icons\SharpSerializer_128x128.1.png" />
     <Content Include="content\icons\SharpSerializer_128x128.png" />
+    <Content Include="content\icons\SharpSerializer_512x512.1.png" />
     <Content Include="content\icons\SharpSerializer_512x512.png" />
-    <Content Include="content\samples\SharpSerializer.Android.sln" />
-    <Content Include="content\samples\SharpSerializer.iOS.sln" />
+    <Content Include="content\lib\android\SharpSerializer.Android.dll" />
+    <Content Include="content\lib\ios\SharpSerializer.iOS.dll" />
     <Content Include="how-to.txt" />
     <Content Include="screenshots\android-CropperCapture[42].png" />
     <Content Include="screenshots\android-CropperCapture[43] %282%29.png" />
@@ -94,6 +104,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="content\bin\" />
+    <Folder Include="content\samples\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
