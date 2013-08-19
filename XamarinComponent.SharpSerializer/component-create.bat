@@ -1,18 +1,11 @@
 :: component-create.bat
 @echo off
-
 setlocal ENABLEDELAYEDEXPANSION
-
-call .\compile.bat
-
-
-
 
 set MONO="%PROGRAMFILES%\Mono-3.0.9\bin\mono.exe"
 ::set XPKG=bin.apps\xpkg\xpkg.exe
 set XPKG=bin.apps\xpkg\xamarin-component.exe
 set RAKE=C:\bin\Ruby200\bin\rake
-
 
 :: rake downloads xpkg and runs:
 
@@ -25,7 +18,8 @@ set ASSEMBLIES=^
 
 	
 :: http://www.dostips.com/DtTipsStringManipulation.php
-:: 
+
+call .\compile.bat
 
 echo ===========================================================================
 echo copying assemblies
@@ -64,8 +58,8 @@ DEL /Q *.xam *.xam.zip
 	%XPKG% ^
 	create-manually ^
 	%PACKAGE%-1.0.xam ^
-	--name="HolisticWare SharpSerializer component" ^
-	--summary="HolisticWare featuring SharpSerializer" ^
+	--name="SharpSerializer" ^
+	--summary="SharpSerializer Xamarin component by Polenter ported by HolisticWare for Xml and binary serialization" ^
 	--publisher="HolisticWare LLC" ^
 	--website="http://holisticware.net/" ^
 	--details="content/Details.md" ^

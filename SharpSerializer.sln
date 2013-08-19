@@ -34,9 +34,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication.Serializ
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "XamarinComponentStore.SharpSerializer.Component.Samples", "XamarinComponentStore.SharpSerializer.Component.Samples", "{BBCBEC64-EB8E-403B-845F-74E4FFC25250}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpSerializer.Android", "XamarinComponentStore.SharpSerializer.Component\content\samples\SharpSerializer.Android\SharpSerializer.Android.csproj", "{6D115418-5AF7-4181-B4CB-3841FF0F60B7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpSerializer.Android", "XamarinComponent.SharpSerializer\content\samples\SharpSerializer.Android\SharpSerializer.Android\SharpSerializer.Android.csproj", "{6D115418-5AF7-4181-B4CB-3841FF0F60B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpSerializer.iOS", "XamarinComponentStore.SharpSerializer.Component\content\samples\SharpSerializer.iOS\SharpSerializer.iOS.csproj", "{9D959723-3619-4EB5-9404-3A10E2957487}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpSerializer.iOS", "XamarinComponent.SharpSerializer\content\samples\SharpSerializer.iOS\SharpSerializer.iOS\SharpSerializer.iOS.csproj", "{9D959723-3619-4EB5-9404-3A10E2957487}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldApp.MonoTouch", "HelloWorldApp.MonoTouch\HelloWorldApp.MonoTouch.csproj", "{B91E9ABB-AEED-4F38-B13C-EA2CB473C4A0}"
 EndProject
@@ -44,7 +44,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldApp.MonoMac", "He
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldApp.WindowsPhone71", "HelloWorldApp.WindowsPhone71\HelloWorldApp.WindowsPhone71.csproj", "{442D2F6E-CD98-4897-AB2F-F473897C6BAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinComponentStore.SharpSerializer.XamarinComponent", "XamarinComponentStore.SharpSerializer.XamarinComponent\XamarinComponentStore.SharpSerializer.XamarinComponent.csproj", "{0B74B492-F37C-416A-82BF-156F25B7BC08}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinComponent.SharpSerializer", "XamarinComponent.SharpSerializer\XamarinComponent.SharpSerializer.csproj", "{0B74B492-F37C-416A-82BF-156F25B7BC08}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

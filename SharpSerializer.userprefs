@@ -1,15 +1,35 @@
 ﻿<Properties MonoDevelop.MonoMac.LastXamMacNagTime="08/05/2013 12:17:13">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="HelloWorldApp/Form1.XP.Shared.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SharpSerializer.Library.MonoForAndroid\Properties\AssemblyInfo.cs">
     <Files>
-      <File FileName="HelloWorldApp/Form1.XP.Shared.cs" Line="152" Column="2" />
-      <File FileName="HelloWorldApp.MonoForAndroid/Form1.cs" Line="76" Column="1" />
-      <File FileName="HelloWorldApp.MonoTouch/Form1.cs" Line="98" Column="1" />
+      <File FileName="HelloWorldApp\Form1.XP.Shared.cs" Line="137" Column="3" />
+      <File FileName="HelloWorldApp.MonoForAndroid\Form1.cs" Line="1" Column="1" />
+      <File FileName="HelloWorldApp.MonoTouch\Form1.cs" Line="1" Column="1" />
+      <File FileName="SharpSerializer.Library.MonoForAndroid\Properties\AssemblyInfo.cs" Line="18" Column="49" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="XamarinComponentStore.SharpSerializer.Component.Samples" expanded="True">
+            <Node name="SharpSerializer.Android" selected="True" />
+          </Node>
+          <Node name="SharpSerializer.Library.MonoForAndroid" expanded="True">
+            <Node name="Properties" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.HelloWorldApp.MonoForAndroid AndroidDeviceId-Debug="emulator-5554" />
+  <MonoDevelop.Ide.ItemProperties.XamarinComponentStore.SharpSerializer.Component.Samples.SharpSerializer.Android AndroidDeviceId-Release="emulator-5554" />
+  <MonoDevelop.Ide.ItemProperties.HelloWorldApp.MonoForAndroid AndroidDeviceId-Debug="emulator-5554" AndroidDeviceId-Release="emulator-5554" />
 </Properties>

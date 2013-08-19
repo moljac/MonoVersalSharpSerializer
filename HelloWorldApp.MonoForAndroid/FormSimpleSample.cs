@@ -61,6 +61,7 @@ namespace HelloWorldApp
 			comboBoxFormats = FindViewById<Spinner>(Resource.Id.comboBoxFormats);
 
 			dateTimePicker1.Click += DateChooser;
+			//dateTimePicker1.For
 			date = DateTime.Today;
 
 			ArrayAdapter ad = new ArrayAdapter(this, Android.Resource.Layout.SimpleSpinnerItem, items);

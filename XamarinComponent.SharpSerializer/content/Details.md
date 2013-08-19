@@ -5,10 +5,13 @@ SharpSerializer fast XML and binary serialization (serialization library) for:
 * 	Binary and
 *	Xml
 
-Serialization
+## Serialization ##
 
-Succinct code snippet[s] showing the minimum viable integration of the
-component into the user's app.
+SharpSerializer offers high performance Xml and binary serialization of the user business
+logic objects (POCOs, plain old c# objects). No additional Attributes are required.
+
+Following code snippets show Xml and binary serialization and deserialization of the 
+simple Person object (included in the Samples). 
 
 
 ```csharp
@@ -70,6 +73,11 @@ component into the user's app.
 		}
 
 ```
+
+More details can be found in original (desktop sample by Polenter).
+
+*	[http://www.sharpserializer.com/en/tutorial/](http://www.sharpserializer.com/en/tutorial/)
+
 
 Cross-platform port by HolisticWare team:
 
