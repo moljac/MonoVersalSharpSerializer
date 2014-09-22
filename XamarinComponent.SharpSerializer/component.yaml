@@ -1,0 +1,28 @@
+version: 1.1.0
+id: SharpSerializer
+name: SharpSerializer
+publisher: HolisticWare d.o.o.
+publisher-url: http://holisticware.net
+summary: SharpSerializer Xamarin component ported by HolisticWare
+details: content/Details.md
+license: content/LICENSE.md
+getting-started: content/GettingStarted.md
+no_build: true
+libraries:
+  ios:
+    - content/lib/ios/classic/SharpSerializer.iOS.dll
+  ios-unified: 
+    - content/lib/ios/unified/SharpSerializer.iOS.dll
+  android:
+    - content/lib/android/SharpSerializer.Android.dll
+icons:
+  - content/icons/SharpSerializer_128x128.png
+  - content/icons/SharpSerializer_512x512.png
+samples:
+  - name: "Android Sample"
+    path: content/samples/SharpSerializer.Android/SharpSerializer.Android.sln
+  - name: "iOS Unified Sample"
+    path: content/samples/SharpSerializer.iOS/SharpSerializer.iOS.sln
+  - name: "iOS Classic Sample"
+    path: content/samples/SharpSerializer.iOS/SharpSerializer.iOS-Classic.sln
+  

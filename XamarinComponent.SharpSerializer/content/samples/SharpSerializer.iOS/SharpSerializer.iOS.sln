@@ -1,6 +1,7 @@
+﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpSerializer.iOS", "SharpSerializer.iOS\SharpSerializer.iOS.csproj", "{9D959723-3619-4EB5-9404-3A10E2957487}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldApp.MonoTouch", "HelloWorldApp.MonoTouch\HelloWorldApp.MonoTouch.csproj", "{C949240B-B270-4A5D-B2C7-7051491FF390}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,22 +15,25 @@ Global
 		Release|iPhoneSimulator = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9D959723-3619-4EB5-9404-3A10E2957487}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
-		{9D959723-3619-4EB5-9404-3A10E2957487}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
-		{9D959723-3619-4EB5-9404-3A10E2957487}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Ad-Hoc|iPhoneSimulator
-		{9D959723-3619-4EB5-9404-3A10E2957487}.Ad-Hoc|iPhoneSimulator.Build.0 = Ad-Hoc|iPhoneSimulator
-		{9D959723-3619-4EB5-9404-3A10E2957487}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
-		{9D959723-3619-4EB5-9404-3A10E2957487}.AppStore|iPhone.Build.0 = AppStore|iPhone
-		{9D959723-3619-4EB5-9404-3A10E2957487}.AppStore|iPhoneSimulator.ActiveCfg = AppStore|iPhoneSimulator
-		{9D959723-3619-4EB5-9404-3A10E2957487}.AppStore|iPhoneSimulator.Build.0 = AppStore|iPhoneSimulator
-		{9D959723-3619-4EB5-9404-3A10E2957487}.Debug|iPhone.ActiveCfg = Debug|iPhone
-		{9D959723-3619-4EB5-9404-3A10E2957487}.Debug|iPhone.Build.0 = Debug|iPhone
-		{9D959723-3619-4EB5-9404-3A10E2957487}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
-		{9D959723-3619-4EB5-9404-3A10E2957487}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
-		{9D959723-3619-4EB5-9404-3A10E2957487}.Release|iPhone.ActiveCfg = Release|iPhone
-		{9D959723-3619-4EB5-9404-3A10E2957487}.Release|iPhone.Build.0 = Release|iPhone
-		{9D959723-3619-4EB5-9404-3A10E2957487}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
-		{9D959723-3619-4EB5-9404-3A10E2957487}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{C949240B-B270-4A5D-B2C7-7051491FF390}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{C949240B-B270-4A5D-B2C7-7051491FF390}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{C949240B-B270-4A5D-B2C7-7051491FF390}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Ad-Hoc|iPhone
+		{C949240B-B270-4A5D-B2C7-7051491FF390}.Ad-Hoc|iPhoneSimulator.Build.0 = Ad-Hoc|iPhone
+		{C949240B-B270-4A5D-B2C7-7051491FF390}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{C949240B-B270-4A5D-B2C7-7051491FF390}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{C949240B-B270-4A5D-B2C7-7051491FF390}.AppStore|iPhoneSimulator.ActiveCfg = Ad-Hoc|iPhone
+		{C949240B-B270-4A5D-B2C7-7051491FF390}.AppStore|iPhoneSimulator.Build.0 = Ad-Hoc|iPhone
+		{C949240B-B270-4A5D-B2C7-7051491FF390}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{C949240B-B270-4A5D-B2C7-7051491FF390}.Debug|iPhone.Build.0 = Debug|iPhone
+		{C949240B-B270-4A5D-B2C7-7051491FF390}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{C949240B-B270-4A5D-B2C7-7051491FF390}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{C949240B-B270-4A5D-B2C7-7051491FF390}.Release|iPhone.ActiveCfg = Release|iPhone
+		{C949240B-B270-4A5D-B2C7-7051491FF390}.Release|iPhone.Build.0 = Release|iPhone
+		{C949240B-B270-4A5D-B2C7-7051491FF390}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{C949240B-B270-4A5D-B2C7-7051491FF390}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = HelloWorldApp.MonoTouch\HelloWorldApp.MonoTouch.csproj
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
