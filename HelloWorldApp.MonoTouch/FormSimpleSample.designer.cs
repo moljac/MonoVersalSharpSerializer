@@ -4,7 +4,26 @@
 // actions made in the Xcode designer. If it is removed, they will be lost.
 // Manual changes to this file may not be handled correctly.
 //
+
+#if __UNIFIED__
+using UIKit;
+using Foundation;
+using CoreAnimation;
+using CoreGraphics;
+#else
+using MonoTouch.UIKit;
 using MonoTouch.Foundation;
+using MonoTouch.CoreAnimation;
+using MonoTouch.CoreGraphics;
+
+using System.Drawing;
+using CGRect = global::System.Drawing.RectangleF;
+using CGPoint = global::System.Drawing.PointF;
+using CGSize = global::System.Drawing.SizeF;
+using nfloat = global::System.Single;
+using nint = global::System.Int32;
+using nuint = global::System.UInt32;
+#endif
 
 namespace HelloWorldApp
 {
@@ -12,31 +31,31 @@ namespace HelloWorldApp
 	partial class FormSimpleSample
 	{
 		[Outlet]
-		MonoTouch.UIKit.UITextField textBoxNameFirst { get; set; }
+		UITextField textBoxNameFirst { get; set; }
 
 		[Outlet]
-		MonoTouch.UIKit.UITextField textBoxNameLast { get; set; }
+		UITextField textBoxNameLast { get; set; }
 
 		[Outlet]
-		MonoTouch.UIKit.UITextField dateTimePicker1 { get; set; }
+		UITextField dateTimePicker1 { get; set; }
 
 		[Outlet]
-		MonoTouch.UIKit.UITextField textBoxAge { get; set; }
+		UITextField textBoxAge { get; set; }
 
 		[Outlet]
-		MonoTouch.UIKit.UIButton buttonLoad { get; set; }
+		UIButton buttonLoad { get; set; }
 
 		[Outlet]
-		MonoTouch.UIKit.UIButton buttonSave { get; set; }
+		UIButton buttonSave { get; set; }
 
 		[Outlet]
-		MonoTouch.UIKit.UIButton buttonOpen { get; set; }
+		UIButton buttonOpen { get; set; }
 
 		[Outlet]
-		MonoTouch.UIKit.UIButton buttonClear { get; set; }
+		UIButton buttonClear { get; set; }
 
 		[Outlet]
-		MonoTouch.UIKit.UITextField comboBoxFormats { get; set; }
+		UITextField comboBoxFormats { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
