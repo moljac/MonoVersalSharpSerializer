@@ -1,8 +1,9 @@
-﻿<Properties MonoDevelop.MonoMac.LastXamMacNagTime="9/22/2014 8:33:11 AM">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone4s.8.0" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="HelloWorldApp/Form1.SharpSerializer.cs">
+﻿<Properties MonoDevelop.MonoMac.LastXamMacNagTime="12/13/2014 8:16:22 AM">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone4s.8.1" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="HelloWorldApp.MonoTouch/PickerModel.cs">
     <Files>
-      <File FileName="HelloWorldApp/Form1.SharpSerializer.cs" Line="7" Column="7" />
+      <File FileName="HelloWorldApp/Form1.SharpSerializer.cs" Line="1" Column="1" />
+      <File FileName="HelloWorldApp.MonoTouch/PickerModel.cs" Line="2" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

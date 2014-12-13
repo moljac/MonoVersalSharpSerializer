@@ -46,31 +46,31 @@ namespace HelloWorldApp
 		}
 
 		
-		public override int GetComponentCount(UIPickerView uipv)
+		public override nint GetComponentCount(UIPickerView uipv)
 		{
 			return(1);	
 		}
 		
-		public override int GetRowsInComponent (UIPickerView uipv, int component)
+		public override nint GetRowsInComponent (UIPickerView uipv, nint component)
 		{
-			int retval1 = columns[component].Count;
+			nint retval1 = columns[(int) component].Count;
 						
 			return retval1;
 		}
 		
-		public override string GetTitle(UIPickerView uipv, int row, int component)
+		public override string GetTitle(UIPickerView uipv, nint row, nint component)
 		{
 			//each component would get its own title.			
-			return columns[component][row];		
+			return columns[(int) component][(int) row];		
 		}
 
 		
-		public override float GetComponentWidth(UIPickerView uipv, int comp)
+		public override nfloat GetComponentWidth(UIPickerView uipv, nint comp)
 		{
 			return(400f);
 		}
 		
-		public override float GetRowHeight(UIPickerView uipv, int comp)
+		public override nfloat GetRowHeight(UIPickerView uipv, nint comp)
 		{
 			return(40f); 
 		}
@@ -80,11 +80,11 @@ namespace HelloWorldApp
 			public string SelectedValue { get; set; }
 		}
 		
-		public override void Selected (UIPickerView picker, int row, int component)
+		public override void Selected (UIPickerView picker, nint row, nint component)
 		{
 			if (this.PickerChanged != null)
 			{
-				this.PickerChanged(this, new PickerChangedEventArgs{SelectedValue = columns[component][row]});
+				this.PickerChanged(this, new PickerChangedEventArgs{SelectedValue = columns[(int) component][(int) row]});
 			}
 		}
 		
