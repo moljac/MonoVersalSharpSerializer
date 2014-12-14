@@ -1,4 +1,4 @@
-version: 1.1.0
+version: 1.1.1
 id: SharpSerializer
 name: SharpSerializer
 publisher: HolisticWare d.o.o.
@@ -7,12 +7,12 @@ summary: SharpSerializer Xamarin component ported by HolisticWare
 details: content/Details.md
 license: content/LICENSE.md
 getting-started: content/GettingStarted.md
-no_build: true
+#no_build: true
 libraries:
   ios:
-    - content/lib/ios/classic/SharpSerializer.iOS.dll
+    - content/lib/ios/SharpSerializer.iOS.dll
   ios-unified: 
-    - content/lib/ios/unified/SharpSerializer.iOS.dll
+    - content/lib/ios-unified/SharpSerializer.iOS.dll
   android:
     - content/lib/android/SharpSerializer.Android.dll
 icons:

@@ -1,15 +1,15 @@
-﻿<Properties MonoDevelop.MonoMac.LastXamMacNagTime="12/13/2014 8:16:22 AM">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone4s.8.1" />
+﻿<Properties MonoDevelop.MonoMac.LastXamMacNagTime="12/13/2014 10:56:51 PM">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.moljac’s iPhone 4s" />
   <MonoDevelop.Ide.Workbench ActiveDocument="HelloWorldApp.MonoTouch/PickerModel.cs">
     <Files>
       <File FileName="HelloWorldApp/Form1.SharpSerializer.cs" Line="1" Column="1" />
-      <File FileName="HelloWorldApp.MonoTouch/PickerModel.cs" Line="2" Column="2" />
+      <File FileName="HelloWorldApp.MonoTouch/PickerModel.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.HelloWorldApp.MonoForAndroid AndroidDeviceId-Debug="emulator-5554" AndroidDeviceId-Release="emulator-5554" />
   <MonoDevelop.Ide.ItemProperties.XamarinComponentStore.SharpSerializer.Component.Samples.SharpSerializer.Android AndroidDeviceId-Release="emulator-5554" />
+  <MonoDevelop.Ide.ItemProperties.HelloWorldApp.MonoForAndroid AndroidDeviceId-Debug="emulator-5554" AndroidDeviceId-Release="emulator-5554" />
 </Properties>
