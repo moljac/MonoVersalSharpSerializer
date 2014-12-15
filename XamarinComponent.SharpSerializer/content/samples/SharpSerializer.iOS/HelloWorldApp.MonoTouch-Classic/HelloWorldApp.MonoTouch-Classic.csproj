@@ -87,7 +87,7 @@
     <Reference Include="System.Core" />
     <Reference Include="monotouch" />
     <Reference Include="SharpSerializer.iOS">
-      <HintPath>..\..\..\lib\ios\classic\SharpSerializer.iOS.dll</HintPath>
+      <HintPath>..\..\..\lib\ios\SharpSerializer.iOS.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
