@@ -7,7 +7,7 @@ summary: SharpSerializer Xamarin component ported by HolisticWare
 details: content/Details.md
 license: content/LICENSE.md
 getting-started: content/GettingStarted.md
-no_build: true
+#no_build: true
 libraries:
   ios:
     - content/lib/ios/SharpSerializer.iOS.dll
